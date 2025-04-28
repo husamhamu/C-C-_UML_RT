@@ -63,7 +63,7 @@ Dafür wurden **Papyrus-RT (UML-RT)** für die grafische Modellierung und **C/C+
 
 ---
 
-### 🧩 3. Objektorientierte Programmierung (OOP)
+### 🧩 3. C++ Objektorientierte Programmierung (OOP)
 
 - **Rule of Three**: Implementierung korrekter Kopierkonstruktoren, Assignment-Operatoren und Destruktoren (z.B. Klasse `Box`)
 - **Vererbung und Polymorphie**: Erstellung hierarchischer Klassen (z.B. `Person`, `Student`) mit `virtual` Methoden

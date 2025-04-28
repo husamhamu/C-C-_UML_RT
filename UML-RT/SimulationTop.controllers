@@ -1,0 +1,4 @@
+SimulationTop = Main
+SimulationTop.bedSimulation.guiIncomingEvents = S1
+SimulationTop.bedSimulation.guiOutgoingUpdates = S2
+SimulationTop.bedSimulation.bedMovementSpeedSimulation = S3

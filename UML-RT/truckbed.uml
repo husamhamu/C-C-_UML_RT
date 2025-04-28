@@ -1,0 +1,1735 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:RTCppProperties="http://www.eclipse.org/papyrus/umlrt/cppproperties" xmlns:UMLRTStateMachines="http://www.eclipse.org/papyrus/umlrt/statemachine" xmlns:UMLRealTime="http://www.eclipse.org/papyrus/umlrt" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_Z_U_ILm-Eeejd5TF5NVUeg" name="truckbed">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z_VmMLm-Eeejd5TF5NVUeg" source="http://www.eclipse.org/papyrus-rt/language/1.0.0">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Z_VmMbm-Eeejd5TF5NVUeg" key="language" value="umlrt-cpp"/>
+    </eAnnotations>
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_08eMMMfOEeeLjf3s145ZZA" source="UMLRT_Default_top">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_08gBYMfOEeeLjf3s145ZZA" key="top_name" value="SimulationTop"/>
+    </eAnnotations>
+    <ownedComment xmi:type="uml:Comment" xmi:id="_mgYw8O89Eeef3vOzsPWAfQ" annotatedElement="_Z_U_ILm-Eeejd5TF5NVUeg">
+      <body>(exercise v2)</body>
+    </ownedComment>
+    <packagedElement xmi:type="uml:Package" xmi:id="_rJoH8Lm-Eeejd5TF5NVUeg" name="simulation">
+      <packagedElement xmi:type="uml:Package" xmi:id="_uu928Lm-Eeejd5TF5NVUeg" name="BedSensorProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_urcB0Lm-Eeejd5TF5NVUeg" name="BedSensorProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uvtd0Lm-Eeejd5TF5NVUeg" client="_urcB0Lm-Eeejd5TF5NVUeg" supplier="_uvh3oLm-Eeejd5TF5NVUeg" contract="_uvh3oLm-Eeejd5TF5NVUeg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_uwA_0Lm-Eeejd5TF5NVUeg" client="_urcB0Lm-Eeejd5TF5NVUeg" supplier="_uv5rELm-Eeejd5TF5NVUeg" contract="_uv5rELm-Eeejd5TF5NVUeg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_uvh3oLm-Eeejd5TF5NVUeg" name="BedSensorProtocol">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6xcKULm-Eeejd5TF5NVUeg" name="bedSensorValues">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_8s5KYLm-Eeejd5TF5NVUeg" name="isUp">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="__SvyULm-Eeejd5TF5NVUeg" name="isDown">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Aqx8QLm_Eeejd5TF5NVUeg" name="moveUp">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_CwhgwLm_Eeejd5TF5NVUeg" name="moveDown">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_uvv6ELm-Eeejd5TF5NVUeg" name="BedSensorProtocol~"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_uv314Lm-Eeejd5TF5NVUeg" client="_urcB0Lm-Eeejd5TF5NVUeg" supplier="_uvv6ELm-Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_uv5EALm-Eeejd5TF5NVUeg" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_uv5rELm-Eeejd5TF5NVUeg" name="BedSensorProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_uwC1ALm-Eeejd5TF5NVUeg" client="_urcB0Lm-Eeejd5TF5NVUeg" supplier="_uv5rELm-Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_6xgbwLm-Eeejd5TF5NVUeg" operation="_6xcKULm-Eeejd5TF5NVUeg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LMxUULm_Eeejd5TF5NVUeg" name="CockpitProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_LMsb0Lm_Eeejd5TF5NVUeg" name="CockpitProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LM7sYLm_Eeejd5TF5NVUeg" client="_LMsb0Lm_Eeejd5TF5NVUeg" supplier="_LM2z4Lm_Eeejd5TF5NVUeg" contract="_LM2z4Lm_Eeejd5TF5NVUeg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_LNHSkLm_Eeejd5TF5NVUeg" client="_LMsb0Lm_Eeejd5TF5NVUeg" supplier="_LNDoMLm_Eeejd5TF5NVUeg" contract="_LNDoMLm_Eeejd5TF5NVUeg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LM2z4Lm_Eeejd5TF5NVUeg" name="CockpitProtocol"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LM86gLm_Eeejd5TF5NVUeg" name="CockpitProtocol~">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_M9ymALm_Eeejd5TF5NVUeg" name="enableWarning">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NwyJMLm_Eeejd5TF5NVUeg" name="enable">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_LNCaELm_Eeejd5TF5NVUeg" client="_LMsb0Lm_Eeejd5TF5NVUeg" supplier="_LM86gLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_LNDBILm_Eeejd5TF5NVUeg" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_LNDoMLm_Eeejd5TF5NVUeg" name="CockpitProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_LNH5oLm_Eeejd5TF5NVUeg" client="_LMsb0Lm_Eeejd5TF5NVUeg" supplier="_LNDoMLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_M956wLm_Eeejd5TF5NVUeg" operation="_M9ymALm_Eeejd5TF5NVUeg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_Ti21gLm_Eeejd5TF5NVUeg" name="JoystickProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_TizyMLm_Eeejd5TF5NVUeg" name="JoystickProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Ti88ILm_Eeejd5TF5NVUeg" client="_TizyMLm_Eeejd5TF5NVUeg" supplier="_Ti540Lm_Eeejd5TF5NVUeg" contract="_Ti540Lm_Eeejd5TF5NVUeg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_TjE38Lm_Eeejd5TF5NVUeg" client="_TizyMLm_Eeejd5TF5NVUeg" supplier="_TjB0oLm_Eeejd5TF5NVUeg" contract="_TjB0oLm_Eeejd5TF5NVUeg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Ti540Lm_Eeejd5TF5NVUeg" name="JoystickProtocol">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_VsPj4Lm_Eeejd5TF5NVUeg" name="joystickPosition">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_WiQl4Lm_Eeejd5TF5NVUeg" name="position">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_Ti9jMLm_Eeejd5TF5NVUeg" name="JoystickProtocol~"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_TjAmgLm_Eeejd5TF5NVUeg" client="_TizyMLm_Eeejd5TF5NVUeg" supplier="_Ti9jMLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_TjBNkLm_Eeejd5TF5NVUeg" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_TjB0oLm_Eeejd5TF5NVUeg" name="JoystickProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_TjFfALm_Eeejd5TF5NVUeg" client="_TizyMLm_Eeejd5TF5NVUeg" supplier="_TjB0oLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_VsVDcLm_Eeejd5TF5NVUeg" operation="_VsPj4Lm_Eeejd5TF5NVUeg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eVYj8Lm_Eeejd5TF5NVUeg" name="MotorControlProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_eVWHsLm_Eeejd5TF5NVUeg" name="MotorControlProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eVeqkLm_Eeejd5TF5NVUeg" client="_eVWHsLm_Eeejd5TF5NVUeg" supplier="_eVcOULm_Eeejd5TF5NVUeg" contract="_eVcOULm_Eeejd5TF5NVUeg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_eVl_ULm_Eeejd5TF5NVUeg" client="_eVWHsLm_Eeejd5TF5NVUeg" supplier="_eVi8Abm_Eeejd5TF5NVUeg" contract="_eVi8Abm_Eeejd5TF5NVUeg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eVcOULm_Eeejd5TF5NVUeg" name="MotorControlProtocol"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eVfRoLm_Eeejd5TF5NVUeg" name="MotorControlProtocol~">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_gzzuMLm_Eeejd5TF5NVUeg" name="setMotorSpeed">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_hoLxcLm_Eeejd5TF5NVUeg" name="speed">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_eViU8Lm_Eeejd5TF5NVUeg" client="_eVWHsLm_Eeejd5TF5NVUeg" supplier="_eVfRoLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_eVi8ALm_Eeejd5TF5NVUeg" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_eVi8Abm_Eeejd5TF5NVUeg" name="MotorControlProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_eVmmYLm_Eeejd5TF5NVUeg" client="_eVWHsLm_Eeejd5TF5NVUeg" supplier="_eVi8Abm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_gz3_oLm_Eeejd5TF5NVUeg" operation="_gzzuMLm_Eeejd5TF5NVUeg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_kns2kLm_Eeejd5TF5NVUeg" name="MovementProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_knqaULm_Eeejd5TF5NVUeg" name="MovementProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_kny9MLm_Eeejd5TF5NVUeg" client="_knqaULm_Eeejd5TF5NVUeg" supplier="_knvS0Lm_Eeejd5TF5NVUeg" contract="_knvS0Lm_Eeejd5TF5NVUeg"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_kn6R8Lm_Eeejd5TF5NVUeg" client="_knqaULm_Eeejd5TF5NVUeg" supplier="_kn3OoLm_Eeejd5TF5NVUeg" contract="_kn3OoLm_Eeejd5TF5NVUeg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_knvS0Lm_Eeejd5TF5NVUeg" name="MovementProtocol">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_mMWgMLm_Eeejd5TF5NVUeg" name="vehicleMoving">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_m3Cb8Lm_Eeejd5TF5NVUeg" name="moving">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_knzkQLm_Eeejd5TF5NVUeg" name="MovementProtocol~"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_kn2AgLm_Eeejd5TF5NVUeg" client="_knqaULm_Eeejd5TF5NVUeg" supplier="_knzkQLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_kn2nkLm_Eeejd5TF5NVUeg" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_kn3OoLm_Eeejd5TF5NVUeg" name="MovementProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_kn65ALm_Eeejd5TF5NVUeg" client="_knqaULm_Eeejd5TF5NVUeg" supplier="_kn3OoLm_Eeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_mMYVYLm_Eeejd5TF5NVUeg" operation="_mMWgMLm_Eeejd5TF5NVUeg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fvC9QMevEeeLjf3s145ZZA" name="RotationSensorPointerProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_fu7BcMevEeeLjf3s145ZZA" name="RotationSensorPointerProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_fvMuQMevEeeLjf3s145ZZA" client="_fu7BcMevEeeLjf3s145ZZA" supplier="_fvIc0MevEeeLjf3s145ZZA" contract="_fvIc0MevEeeLjf3s145ZZA"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_fvY7gMevEeeLjf3s145ZZA" client="_fu7BcMevEeeLjf3s145ZZA" supplier="_fvS04cevEeeLjf3s145ZZA" contract="_fvS04cevEeeLjf3s145ZZA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fvIc0MevEeeLjf3s145ZZA" name="RotationSensorPointerProtocol">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_jaEdgMevEeeLjf3s145ZZA" name="receivePointerToRotationSensor">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_k_gxUMevEeeLjf3s145ZZA" name="value" type="__81I0MeuEeeLjf3s145ZZA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fvN8YMevEeeLjf3s145ZZA" name="RotationSensorPointerProtocol~"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_fvRmwMevEeeLjf3s145ZZA" client="_fu7BcMevEeeLjf3s145ZZA" supplier="_fvN8YMevEeeLjf3s145ZZA"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_fvS04MevEeeLjf3s145ZZA" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_fvS04cevEeeLjf3s145ZZA" name="RotationSensorPointerProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_fvaJoMevEeeLjf3s145ZZA" client="_fu7BcMevEeeLjf3s145ZZA" supplier="_fvS04cevEeeLjf3s145ZZA"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_jaU8MMevEeeLjf3s145ZZA" operation="_jaEdgMevEeeLjf3s145ZZA"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_XLTQ8LnBEeejd5TF5NVUeg" name="Constants">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_hPnOgLnBEeejd5TF5NVUeg" name="JS_UP" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_hPnOgbnBEeejd5TF5NVUeg" value="2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_rszmILnBEeejd5TF5NVUeg" name="JS_IDLE" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_rszmIbnBEeejd5TF5NVUeg" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_tFi6sLnBEeejd5TF5NVUeg" name="JS_DOWN" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_tFi6sbnBEeejd5TF5NVUeg" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_6y1xILnBEeejd5TF5NVUeg" name="PULSE_COUNT" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_6y1xIbnBEeejd5TF5NVUeg" value="130"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_dnlycMe4EeeLjf3s145ZZA" name="MOTOR_UP_FAST" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_2hNOAMfREee1PdhFjg0tCQ" value="3"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_iGgNwMe4EeeLjf3s145ZZA" name="MOTOR_UP_SLOW" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_4aSPgMfREee1PdhFjg0tCQ" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_kET-QMe4EeeLjf3s145ZZA" name="MOTOR_DOWN_FAST" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_6jcUYMfREee1PdhFjg0tCQ" value="-3"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_m2kqgMe4EeeLjf3s145ZZA" name="MOTOR_DOWN_SLOW" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_8XMJ8MfREee1PdhFjg0tCQ" value="-1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_Rd3lwMfzEeel_eYEdvwXwA" name="MOTOR_OFF" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_Vl05oMfzEeel_eYEdvwXwA" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_UW230MfBEeeLjf3s145ZZA" name="MAX_ANGLE" isStatic="true" isReadOnly="true">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_XXXbcMfBEeeLjf3s145ZZA" value="50"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_AQPSAOTEEeejp8_Caqcvmg" name="vs_compat_dummy" visibility="private">
+          <ownedComment xmi:type="uml:Comment" xmi:id="_JfZJMOTEEeejp8_Caqcvmg" annotatedElement="_AQPSAOTEEeejp8_Caqcvmg">
+            <body>Required for compilability with Microsoft Visual Studio Compilers (otherwise complains about creation of an empty array)</body>
+          </ownedComment>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_SRw9wOTEEeejp8_Caqcvmg" value="-9"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_2GJnMLzwEeeWJamxl67WTw" name="SimulationTop" isActive="true">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_F6dikLzzEeeWJamxl67WTw" name="bedSimulation" visibility="protected" type="_DmTHkLzzEeeWJamxl67WTw" isOrdered="true" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LJZsoLzzEeeWJamxl67WTw" name="bedControl" visibility="protected" type="_KYplILzzEeeWJamxl67WTw" isOrdered="true" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_E2D-8Lz2EeeT9eb0GxHqbg" name="RTConnector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_E2NI4Lz2EeeT9eb0GxHqbg" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_YFh58Lz1EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_E2OXALz2EeeT9eb0GxHqbg" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_qz_ZoLz0EeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_L8PXcLz2EeeT9eb0GxHqbg" name="RTConnector3">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_L8RzsLz2EeeT9eb0GxHqbg" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_6qibkLz0EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_L8Rzsbz2EeeT9eb0GxHqbg" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_Ul-C0Lz1EeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_P97EMLz2EeeT9eb0GxHqbg" name="RTConnector4">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_P985YLz2EeeT9eb0GxHqbg" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_nr1V4Lz0EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_P99gcLz2EeeT9eb0GxHqbg" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_iOCbALz1EeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_RpAtALz2EeeT9eb0GxHqbg" name="RTConnector5">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_RpDJQLz2EeeT9eb0GxHqbg" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_kXKqsLz1EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_RpDJQbz2EeeT9eb0GxHqbg" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_6GhlALzzEeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_TYFd8Lz2EeeT9eb0GxHqbg" name="RTConnector6">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_TYH6MLz2EeeT9eb0GxHqbg" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_WDmwYLzzEeeWJamxl67WTw"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_TYH6Mbz2EeeT9eb0GxHqbg" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_oOYM0Lz1EeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_I6_rwMexEeeLjf3s145ZZA" name="RTConnector7">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_I7CIAMexEeeLjf3s145ZZA" partWithPort="_LJZsoLzzEeeWJamxl67WTw" role="_4yxD8MewEeeLjf3s145ZZA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_I7CIAcexEeeLjf3s145ZZA" partWithPort="_F6dikLzzEeeWJamxl67WTw" role="_9hCJ4MewEeeLjf3s145ZZA"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_JQuQkLzvEeeWJamxl67WTw" name="internal">
+        <packagedElement xmi:type="uml:PrimitiveType" xmi:id="_VIWEUMevEeeLjf3s145ZZA" name="RotationSensor*"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="__81I0MeuEeeLjf3s145ZZA" name="RotationSensor">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_L70qYMevEeeLjf3s145ZZA" name="signal" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_QKAiEMevEeeLjf3s145ZZA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_55uNgMfHEeeLjf3s145ZZA" name="counter" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_55uNgcfHEeeLjf3s145ZZA" value="0"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GyS4wMlEEeeR0JvhXWFsNA" name="currentSpeed" visibility="package">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_X_3YAMlEEeeR0JvhXWFsNA" value="0"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_DD1WAMevEeeLjf3s145ZZA" specification="_BJMOQMevEeeLjf3s145ZZA">
+            <language>C++</language>
+            <body>return this->signal;</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_BJMOQMevEeeLjf3s145ZZA" name="poll" method="_DD1WAMevEeeLjf3s145ZZA">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Jk0WwMevEeeLjf3s145ZZA" direction="return" effect="read">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_DmTHkLzzEeeWJamxl67WTw" name="BedSimulation" isActive="true">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ul-C0Lz1EeeT9eb0GxHqbg" name="toMotorControl" type="_eVWHsLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_YFh58Lz1EeeT9eb0GxHqbg" name="fromBedSensor" type="_urcB0Lm-Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Zbr0kLz1EeeT9eb0GxHqbg" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Zb4B0Lz1EeeT9eb0GxHqbg" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_iOCbALz1EeeT9eb0GxHqbg" name="fromJoystick" type="_TizyMLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_nK9oALz1EeeT9eb0GxHqbg" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_nLKcULz1EeeT9eb0GxHqbg" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_kXKqsLz1EeeT9eb0GxHqbg" name="fromMovementSensor" type="_knqaULm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_lWgn0Lz1EeeT9eb0GxHqbg" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_lWvRULz1EeeT9eb0GxHqbg" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_oOYM0Lz1EeeT9eb0GxHqbg" name="toVehicleCockpit" type="_LMsb0Lm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_j5u_kMewEeeLjf3s145ZZA" name="rotationSensorStatekeeperAndDistributor" visibility="protected" type="_ssnm8MevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_9hCJ4MewEeeLjf3s145ZZA" name="toRotationSensorPointer" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="true" isService="true"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_b_lKcMfGEeeLjf3s145ZZA" name="bedMovementSpeedSimulation" visibility="protected" type="_TX8y0MexEeeLjf3s145ZZA" isOrdered="true" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_q3YS4MfLEeeLjf3s145ZZA" name="guiIncomingEvents" visibility="protected" type="_mXK-cMfIEeeLjf3s145ZZA" isOrdered="true" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_ewd5gMfNEeeLjf3s145ZZA" name="guiOutgoingUpdates" visibility="protected" type="_7p7qEMfLEeeLjf3s145ZZA" isOrdered="true" aggregation="composite"/>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_CRqnUMexEeeLjf3s145ZZA" name="RTConnector1">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_CRtDkMexEeeLjf3s145ZZA" partWithPort="_j5u_kMewEeeLjf3s145ZZA" role="_w60FsMevEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_CRtqoMexEeeLjf3s145ZZA" role="_9hCJ4MewEeeLjf3s145ZZA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_SEI_kMfHEeeLjf3s145ZZA" name="RTConnector2">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_SEMC4MfHEeeLjf3s145ZZA" role="_Ul-C0Lz1EeeT9eb0GxHqbg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_SEMC4cfHEeeLjf3s145ZZA" partWithPort="_b_lKcMfGEeeLjf3s145ZZA" role="_-69UwMexEeeLjf3s145ZZA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_V_vScMfHEeeLjf3s145ZZA" name="RTConnector3">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_V_yVwMfHEeeLjf3s145ZZA" partWithPort="_b_lKcMfGEeeLjf3s145ZZA" role="_1GbfoMexEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_V_yVwcfHEeeLjf3s145ZZA" role="_YFh58Lz1EeeT9eb0GxHqbg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_XXHVEMfHEeeLjf3s145ZZA" name="RTConnector4">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_XXKYYMfHEeeLjf3s145ZZA" partWithPort="_b_lKcMfGEeeLjf3s145ZZA" role="_xpPAAMexEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_XXKYYcfHEeeLjf3s145ZZA" partWithPort="_j5u_kMewEeeLjf3s145ZZA" role="_w60FsMevEeeLjf3s145ZZA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_zrHZYMfLEeeLjf3s145ZZA" name="RTConnector5">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zrKcsMfLEeeLjf3s145ZZA" partWithPort="_q3YS4MfLEeeLjf3s145ZZA" role="_pm8GEMfIEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zrKcscfLEeeLjf3s145ZZA" role="_iOCbALz1EeeT9eb0GxHqbg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_0ghXYMfLEeeLjf3s145ZZA" name="RTConnector6">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0gkasMfLEeeLjf3s145ZZA" partWithPort="_q3YS4MfLEeeLjf3s145ZZA" role="_Q9J3cMfJEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_0gkascfLEeeLjf3s145ZZA" role="_kXKqsLz1EeeT9eb0GxHqbg"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_l9CN4MfNEeeLjf3s145ZZA" name="RTConnector7">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_l9EqIMfNEeeLjf3s145ZZA" role="_oOYM0Lz1EeeT9eb0GxHqbg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_l9FRMMfNEeeLjf3s145ZZA" partWithPort="_ewd5gMfNEeeLjf3s145ZZA" role="_QkEhsMfMEeeLjf3s145ZZA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_mmzjoMfNEeeLjf3s145ZZA" name="RTConnector8">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_mm1_4MfNEeeLjf3s145ZZA" partWithPort="_ewd5gMfNEeeLjf3s145ZZA" role="_brsWYMfMEeeLjf3s145ZZA"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_mm1_4cfNEeeLjf3s145ZZA" partWithPort="_j5u_kMewEeeLjf3s145ZZA" role="_w60FsMevEeeLjf3s145ZZA"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_IEB9QC7zEeu_GNTUne6_Eg" name="RTConnector9">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_IEGOsC7zEeu_GNTUne6_Eg" partWithPort="_b_lKcMfGEeeLjf3s145ZZA" role="_Mwm2kC7yEeu_GNTUne6_Eg"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_IEGOsS7zEeu_GNTUne6_Eg" partWithPort="_ewd5gMfNEeeLjf3s145ZZA" role="_DJtNwC7yEeu_GNTUne6_Eg"/>
+          </ownedConnector>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_ssnm8MevEeeLjf3s145ZZA" name="RotationSensorStatekeeperAndDistributor" classifierBehavior="_2dg5QMevEeeLjf3s145ZZA" isActive="true">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_w60FsMevEeeLjf3s145ZZA" name="rotationSensorPointerProtocol" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zuu-0MevEeeLjf3s145ZZA" value="3"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zvVbwMevEeeLjf3s145ZZA" value="3"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_GAsTQMewEeeLjf3s145ZZA" name="rotationSensorState" type="__81I0MeuEeeLjf3s145ZZA">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_RGZcYMewEeeLjf3s145ZZA" type="__81I0MeuEeeLjf3s145ZZA">
+              <language>C++</language>
+              <body>RotationSensor()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_2dg5QMevEeeLjf3s145ZZA" name="Distributor" isReentrant="false">
+            <region xmi:type="uml:Region" xmi:id="_2dx_AMevEeeLjf3s145ZZA" name="Region">
+              <transition xmi:type="uml:Transition" xmi:id="_2d-zUMevEeeLjf3s145ZZA" name="distribute" source="_2d1CUMevEeeLjf3s145ZZA" target="_2d7wAMevEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9gOuEMevEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>rotationSensorPointerProtocol.receivePointerToRotationSensor(this->rotationSensorState).send();</body>
+                </effect>
+              </transition>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_2d1CUMevEeeLjf3s145ZZA" kind="initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_2d7wAMevEeeLjf3s145ZZA" name="termiated"/>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_TX8y0MexEeeLjf3s145ZZA" name="BedMovementSpeedSimulation" classifierBehavior="_EC9JUMeyEeeLjf3s145ZZA" isActive="true">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_xpPAAMexEeeLjf3s145ZZA" name="fromRotationSensorPointer" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_1GbfoMexEeeLjf3s145ZZA" name="fromBedSensor" visibility="public" type="_urcB0Lm-Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Lc4-wMfHEeeLjf3s145ZZA" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_LdNu4MfHEeeLjf3s145ZZA" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_-69UwMexEeeLjf3s145ZZA" name="toMotorControl" visibility="public" type="_eVWHsLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_sL1twMeyEeeLjf3s145ZZA" name="rotationSensor" visibility="private" type="_VIWEUMevEeeLjf3s145ZZA">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_jemxsMfPEeeLjf3s145ZZA" type="_VIWEUMevEeeLjf3s145ZZA">
+              <language>C++</language>
+              <body>NULL</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Y5Gm4Me0EeeLjf3s145ZZA" name="timing" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+            <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_FxX5UMe6EeeLjf3s145ZZA" name="tid" visibility="private">
+            <type xmi:type="uml:Class" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6qkTMGXmEeS_4daqvwyFrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Mwm2kC7yEeu_GNTUne6_Eg" name="toGUIOutgoingUpdates" visibility="public" type="_tEFacC7xEeu_GNTUne6_Eg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="false" isService="true"/>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_EC9JUMeyEeeLjf3s145ZZA" name="Simulator" isReentrant="false">
+            <region xmi:type="uml:Region" xmi:id="_EDFFIMeyEeeLjf3s145ZZA" name="Region">
+              <transition xmi:type="uml:Transition" xmi:id="_EDNA8MeyEeeLjf3s145ZZA" name="Initial" source="_EDG6UMeyEeeLjf3s145ZZA" target="_EDKksMeyEeeLjf3s145ZZA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_bi3JUMeyEeeLjf3s145ZZA" name="receivePointerToRotationSensor" kind="external" source="_EDKksMeyEeeLjf3s145ZZA" target="_qQDz4N8nEeeJfdwg4GQMYg">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_hF9lgMeyEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->rotationSensor = msg->getParam(0);
+((RotationSensor*)this->rotationSensor)->counter = ((UMLRTMain::getArgCount() == 1)? atoi(UMLRTMain::getArg(0)): 0) * Constants::PULSE_COUNT / Constants::MAX_ANGLE;
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_ePB0oMeyEeeLjf3s145ZZA" event="_jaU8MMevEeeLjf3s145ZZA" port="_xpPAAMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_cp14IMe1EeeLjf3s145ZZA" name="counter le 0" kind="external" source="_yTAq4MezEeeLjf3s145ZZA" target="_V_4B4MeyEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_A7_ngMf2Eeel_eYEdvwXwA" constrainedElement="_94n9IMf1Eeel_eYEdvwXwA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_A8CDwMf2Eeel_eYEdvwXwA">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter &lt;= 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_19-4EMfEEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informIn(UMLRTTimespec(0, 150*1000000));</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_94n9IMf1Eeel_eYEdvwXwA" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_n_Q4QMe1EeeLjf3s145ZZA" name="counter ge lim" kind="external" source="_2ZOSUMezEeeLjf3s145ZZA" target="_8mnBoMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Czrh4Mf2Eeel_eYEdvwXwA" constrainedElement="_8TNegMf1Eeel_eYEdvwXwA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_Czt-IMf2Eeel_eYEdvwXwA">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter >= Constants::PULSE_COUNT;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ukP6wC7zEeu_GNTUne6_Eg" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informIn(UMLRTTimespec(0, 150*1000000));</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_8TNegMf1Eeel_eYEdvwXwA" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_437pEMe2EeeLjf3s145ZZA" name="" kind="external" source="_V_4B4MeyEeeLjf3s145ZZA" target="_2ZOSUMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_ZGZ7sMe3EeeLjf3s145ZZA" constrainedElement="_6qWB4Me2EeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZGc_AMe3EeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed > 0;
+</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_QOw6sMe5EeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed))));
+fromBedSensor.bedSensorValues(false, false, true, false).send();
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_6qWB4Me2EeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_ml6pQMfBEeeLjf3s145ZZA" name="" kind="external" source="_2ZOSUMezEeeLjf3s145ZZA" target="_2ZOSUMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_4x4DYMfBEeeLjf3s145ZZA" constrainedElement="_ymv94MfBEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_4x5RgMfBEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed > 0 &amp;&amp; speed != ((RotationSensor*)this->rotationSensor)->currentSpeed;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_9jv28MfBEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_ymv94MfBEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_BuA38MfCEeeLjf3s145ZZA" name="" kind="external" source="_2ZOSUMezEeeLjf3s145ZZA" target="_yTAq4MezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_EqugsMfCEeeLjf3s145ZZA" constrainedElement="_C1_zsMfCEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_Eqvu0MfCEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed &lt; 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_J9L40MfCEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed * (-1)))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;
+fromBedSensor.bedSensorValues(false, false, false, true).send();</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_C1_zsMfCEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_RU2p8MfCEeeLjf3s145ZZA" name="" guard="_7TLk4Mf1Eeel_eYEdvwXwA" kind="external" source="_2ZOSUMezEeeLjf3s145ZZA" target="_2ZOSUMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_7TLk4Mf1Eeel_eYEdvwXwA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_7TNaEMf1Eeel_eYEdvwXwA">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter &lt; Constants::PULSE_COUNT;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_TGi_IMfEEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>if(((RotationSensor*)this->rotationSensor)->signal = !((RotationSensor*)this->rotationSensor)->signal)
+	((RotationSensor*)this->rotationSensor)->counter++;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_LIkb8MfEEeeLjf3s145ZZA" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_aVUvcMfDEeeLjf3s145ZZA" name="" kind="external" source="_2ZOSUMezEeeLjf3s145ZZA" target="_gaE8oMfCEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_gjeTwMfDEeeLjf3s145ZZA" constrainedElement="_fow_AMfDEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_gje60cfDEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed == Constants::MOTOR_OFF;</body>
+                  </specification>
+                </ownedRule>
+                <trigger xmi:type="uml:Trigger" xmi:id="_fow_AMfDEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_a6PaYMfDEeeLjf3s145ZZA" name="" kind="external" source="_yTAq4MezEeeLjf3s145ZZA" target="_gaE8oMfCEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_fMkLMMfDEeeLjf3s145ZZA" constrainedElement="_by_AQMfDEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_fMkyQMfDEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed == Constants::MOTOR_OFF;</body>
+                  </specification>
+                </ownedRule>
+                <trigger xmi:type="uml:Trigger" xmi:id="_by_AQMfDEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_e4aqsMfEEeeLjf3s145ZZA" name="" kind="external" source="_yTAq4MezEeeLjf3s145ZZA" target="_yTAq4MezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_GJDiQMf2Eeel_eYEdvwXwA" constrainedElement="_ix5dsMfEEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_GJFXccf2Eeel_eYEdvwXwA">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter > 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nHiBMMfEEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>if(((RotationSensor*)this->rotationSensor)->signal = !((RotationSensor*)this->rotationSensor)->signal)
+	((RotationSensor*)this->rotationSensor)->counter--;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_ix5dsMfEEeeLjf3s145ZZA" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_oSy6cMfEEeeLjf3s145ZZA" name="" kind="external" source="_yTAq4MezEeeLjf3s145ZZA" target="_yTAq4MezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_rOwVQMfEEeeLjf3s145ZZA" constrainedElement="_o0-acMfEEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_rOxjYcfEEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed &lt; 0 &amp;&amp; speed != ((RotationSensor*)this->rotationSensor)->currentSpeed;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_sr3zgMfEEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed * (-1)))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_o0-acMfEEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_-8C_QMfEEeeLjf3s145ZZA" name="" kind="external" source="_8mnBoMezEeeLjf3s145ZZA" target="_yTAq4MezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Bn46cMfFEeeLjf3s145ZZA" constrainedElement="__qk5MMfEEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_Bn5hgcfFEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed &lt; 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_FggKwMfFEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed * (-1)))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;
+fromBedSensor.bedSensorValues(false, false, false, true).send();</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="__qk5MMfEEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_MczOgMfFEeeLjf3s145ZZA" name="" kind="external" source="_yTAq4MezEeeLjf3s145ZZA" target="_2ZOSUMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_O71cwMfFEeeLjf3s145ZZA" constrainedElement="_NVzTEMfFEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_O72q4MfFEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed > 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_SEf20MfFEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;
+fromBedSensor.bedSensorValues(false, false, true, false).send();</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_NVzTEMfFEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_U9_McMfFEeeLjf3s145ZZA" name="" kind="external" source="_gaE8oMfCEeeLjf3s145ZZA" target="_2ZOSUMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_XXI1IMfFEeeLjf3s145ZZA" constrainedElement="_Vk2YIMfFEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_XXJcMcfFEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed > 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_aGEgkMfFEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed))));
+fromBedSensor.bedSensorValues(false, false, true, false).send();
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_Vk2YIMfFEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_cvgoAMfFEeeLjf3s145ZZA" name="" kind="external" source="_gaE8oMfCEeeLjf3s145ZZA" target="_yTAq4MezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_hR51IMfFEeeLjf3s145ZZA" constrainedElement="_f-sg0MfFEeeLjf3s145ZZA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_hR6cMMfFEeeLjf3s145ZZA">
+                    <language>C++</language>
+                    <body>return speed &lt; 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nqH7cMfFEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->tid = timing.informEvery(UMLRTTimespec(0, (long)(Constants::MAX_ANGLE * 500000000ll / (Constants::PULSE_COUNT * speed * (-1)))));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;
+fromBedSensor.bedSensorValues(false, false, false, true).send();</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_f-sg0MfFEeeLjf3s145ZZA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_9Fl7AMkkEee0s-sIi1fHeA" name="drop initial motor speed messages" kind="external" source="_EDKksMeyEeeLjf3s145ZZA" target="_EDKksMeyEeeLjf3s145ZZA">
+                <trigger xmi:type="uml:Trigger" xmi:id="_EKI70MklEee0s-sIi1fHeA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_9BsBwM_PEeef9fnOg1p4lA" name="" kind="external" source="_V_4B4MeyEeeLjf3s145ZZA" target="_V_4B4MeyEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Ak9UMM_QEeef9fnOg1p4lA" constrainedElement="_-lFuMM_PEeef9fnOg1p4lA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_AlA-kM_QEeef9fnOg1p4lA">
+                    <language>C++</language>
+                    <body>return speed == Constants::MOTOR_OFF;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_-Vxf0M_PEeef9fnOg1p4lA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+((RotationSensor*)this->rotationSensor)->currentSpeed = Constants::MOTOR_OFF;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_-lFuMM_PEeef9fnOg1p4lA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_ELNCIM_QEeef9fnOg1p4lA" name="" kind="external" source="_8mnBoMezEeeLjf3s145ZZA" target="_8mnBoMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_Gdi4MM_QEeef9fnOg1p4lA" constrainedElement="_EtZJMM_QEeef9fnOg1p4lA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_GdkGUM_QEeef9fnOg1p4lA">
+                    <language>C++</language>
+                    <body>return speed == Constants::MOTOR_OFF;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Hs0uwM_QEeef9fnOg1p4lA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+((RotationSensor*)this->rotationSensor)->currentSpeed = Constants::MOTOR_OFF;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_EtZJMM_QEeef9fnOg1p4lA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_tLCh0N8oEeeJfdwg4GQMYg" name="" guard="_vFh4kN8oEeeJfdwg4GQMYg" kind="external" source="_qQDz4N8nEeeJfdwg4GQMYg" target="_V_4B4MeyEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_vFh4kN8oEeeJfdwg4GQMYg">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_vFh4kd8oEeeJfdwg4GQMYg">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter == 0;</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_wRkN4N8oEeeJfdwg4GQMYg" guard="_xYZ6IN8oEeeJfdwg4GQMYg" kind="external" source="_qQDz4N8nEeeJfdwg4GQMYg" target="_gaE8oMfCEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_xYZ6IN8oEeeJfdwg4GQMYg">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_xYahMN8oEeeJfdwg4GQMYg">
+                    <language>C++</language>
+                    <body>return ((RotationSensor*)this->rotationSensor)->counter != 0;</body>
+                  </specification>
+                </ownedRule>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_laZiEC86Eeuwb66Gv8fIuw" name="" kind="external" source="_8mnBoMezEeeLjf3s145ZZA" target="_j6jf8C86Eeuwb66Gv8fIuw">
+                <trigger xmi:type="uml:Trigger" xmi:id="_20vSAC86Eeuwb66Gv8fIuw" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_zppusC89EeuxZ591-l2JDA" name="" kind="external" source="_8mnBoMezEeeLjf3s145ZZA" target="_8mnBoMezEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_CxR1IC8-EeuxZ591-l2JDA" constrainedElement="_8Rr7gC89EeuxZ591-l2JDA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_CxVfgC8-EeuxZ591-l2JDA">
+                    <language>C++</language>
+                    <body>return speed > 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_7SjZwC89EeuxZ591-l2JDA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informIn(UMLRTTimespec(0, 150*1000000));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_8Rr7gC89EeuxZ591-l2JDA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_iNgygC8-EeuxZ591-l2JDA" name="" kind="external" source="_V_4B4MeyEeeLjf3s145ZZA" target="_V_4B4MeyEeeLjf3s145ZZA">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_udad4C8-EeuxZ591-l2JDA" constrainedElement="_oJmWcC8-EeuxZ591-l2JDA">
+                  <specification xmi:type="uml:OpaqueExpression" xmi:id="_udbsAC8-EeuxZ591-l2JDA">
+                    <language>C++</language>
+                    <body>return speed &lt; 0;</body>
+                  </specification>
+                </ownedRule>
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_nug88C8-EeuxZ591-l2JDA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>timing.cancelTimer(this->tid);
+this->tid = timing.informIn(UMLRTTimespec(0, 150*1000000));
+((RotationSensor*)this->rotationSensor)->currentSpeed = speed;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_oJmWcC8-EeuxZ591-l2JDA" event="_gz3_oLm_Eeejd5TF5NVUeg" port="_-69UwMexEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_1HtLoC8-EeuxZ591-l2JDA" name="" kind="external" source="_V_4B4MeyEeeLjf3s145ZZA" target="_j6jf8C86Eeuwb66Gv8fIuw">
+                <trigger xmi:type="uml:Trigger" xmi:id="_2cyvQC8-EeuxZ591-l2JDA" port="_Y5Gm4Me0EeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_EDG6UMeyEeeLjf3s145ZZA" kind="initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_EDKksMeyEeeLjf3s145ZZA" name="waitForPointerToRotationSensor"/>
+              <subvertex xmi:type="uml:State" xmi:id="_V_4B4MeyEeeLjf3s145ZZA" name="down">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_tbNZAMe0EeeLjf3s145ZZA" name="C0R0B0100" isReentrant="true">
+                  <language>C++</language>
+                  <body>// C0B0100
+((RotationSensor*)this->rotationSensor)->counter = 0;            // C0
+((RotationSensor*)this->rotationSensor)->signal = false;         // R0
+fromBedSensor.bedSensorValues(false, true, false, false).send(); // B0100</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_yTAq4MezEeeLjf3s145ZZA" name="moveDown"/>
+              <subvertex xmi:type="uml:State" xmi:id="_2ZOSUMezEeeLjf3s145ZZA" name="moveUp"/>
+              <subvertex xmi:type="uml:State" xmi:id="_8mnBoMezEeeLjf3s145ZZA" name="up">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_It7t4Me2EeeLjf3s145ZZA" name="CLR0B1000" isReentrant="false">
+                  <language>C++</language>
+                  <body>// CLR0B1000
+((RotationSensor*)this->rotationSensor)->counter = Constants::PULSE_COUNT; // CL
+((RotationSensor*)this->rotationSensor)->signal = false;                   // R0
+fromBedSensor.bedSensorValues(true, false, false, false).send();           // B1000</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:State" xmi:id="_gaE8oMfCEeeLjf3s145ZZA" name="between">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_mrID8MfCEeeLjf3s145ZZA" name="T0R0B0000">
+                  <language>C++</language>
+                  <body>// T0R0B0000
+((RotationSensor*)this->rotationSensor)->currentSpeed = Constants::MOTOR_OFF;
+timing.cancelTimer(this->tid);                                    // T0
+((RotationSensor*)this->rotationSensor)->signal = false;          // R0
+fromBedSensor.bedSensorValues(false, false, false, false).send(); // B0000</body>
+                </entry>
+              </subvertex>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_qQDz4N8nEeeJfdwg4GQMYg" kind="choice"/>
+              <subvertex xmi:type="uml:State" xmi:id="_j6jf8C86Eeuwb66Gv8fIuw" name="damaged">
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_pYAAEC86Eeuwb66Gv8fIuw" name="Entry" isReentrant="false">
+                  <language>C++</language>
+                  <body>toGUIOutgoingUpdates.setDamaged().send();
+((RotationSensor*)this->rotationSensor)->currentSpeed = Constants::MOTOR_OFF;</body>
+                </entry>
+              </subvertex>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_mXK-cMfIEeeLjf3s145ZZA" name="GUIIncomingEvents" classifierBehavior="_Wx4PIMfJEeeLjf3s145ZZA" isActive="true">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_pm8GEMfIEeeLjf3s145ZZA" name="fromJoystick" visibility="public" type="_TizyMLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VKLRgMfJEeeLjf3s145ZZA" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VKc-UMfJEeeLjf3s145ZZA" value="5"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Q9J3cMfJEeeLjf3s145ZZA" name="fromMovementSensor" visibility="public" type="_knqaULm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Uk-5wMfJEeeLjf3s145ZZA" value="5"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UlRNoMfJEeeLjf3s145ZZA" value="5"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Wx4PIMfJEeeLjf3s145ZZA" name="StdinProcessor" isReentrant="false">
+            <region xmi:type="uml:Region" xmi:id="_Wx-80MfJEeeLjf3s145ZZA" name="Region">
+              <transition xmi:type="uml:Transition" xmi:id="_WyFqgMfJEeeLjf3s145ZZA" name="Initial" source="_WyAyAMfJEeeLjf3s145ZZA" target="_WyDOQMfJEeeLjf3s145ZZA"/>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_WyAyAMfJEeeLjf3s145ZZA" kind="initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_WyDOQMfJEeeLjf3s145ZZA" name="online">
+                <ownedRule xmi:type="uml:Constraint" xmi:id="_bPbqoMfsEeel_eYEdvwXwA">
+                  <specification xmi:type="uml:LiteralBoolean" xmi:id="_bPbqocfsEeel_eYEdvwXwA"/>
+                </ownedRule>
+                <entry xmi:type="uml:OpaqueBehavior" xmi:id="_CJjyYMfsEeel_eYEdvwXwA" name="readAndProcessStdin">
+                  <language>C++</language>
+                  <body>std::string cline;
+while(!std::cin.eof()) {
+	std::getline(std::cin, cline);
+	if(cline == &quot;ju&quot;) // joystick up
+		fromJoystick.joystickPosition(Constants::JS_UP).send();
+	else if(cline == &quot;jd&quot;) // joystick down
+		fromJoystick.joystickPosition(Constants::JS_DOWN).send();
+	else if(cline == &quot;ji&quot;) // joystick idle
+		fromJoystick.joystickPosition(Constants::JS_IDLE).send();
+	else if(cline == &quot;my&quot;) // movement yes/enable
+		fromMovementSensor.vehicleMoving(true).send();
+	else if(cline == &quot;mn&quot;) // movement no/disable
+		fromMovementSensor.vehicleMoving(false).send();
+	else
+		std::cerr &lt;&lt; &quot;ERROR: Could not parse line \&quot;&quot; &lt;&lt; cline &lt;&lt; &quot;\&quot; (use ju,jd,ji,my,mn).&quot; &lt;&lt; std::endl;
+}</body>
+                </entry>
+              </subvertex>
+            </region>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_8Z85UMftEeel_eYEdvwXwA" specification="_xECxAMftEeel_eYEdvwXwA">
+            <language>C++</language>
+            <body></body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_xECxAMftEeel_eYEdvwXwA" name="incomingEventsThread" concurrency="concurrent" method="_8Z85UMftEeel_eYEdvwXwA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_7p7qEMfLEeeLjf3s145ZZA" name="GUIOutgoingUpdates" classifierBehavior="_hB_FoMfMEeeLjf3s145ZZA" isActive="true">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_QkEhsMfMEeeLjf3s145ZZA" name="toVehicleCockpit" visibility="public" type="_LMsb0Lm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_brsWYMfMEeeLjf3s145ZZA" name="fromRotationSensorPointer" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_lqe6wMfMEeeLjf3s145ZZA" name="rotationSensor" visibility="private" type="_VIWEUMevEeeLjf3s145ZZA">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_mCef0MfTEeemDPQj2b_Z9w" type="_VIWEUMevEeeLjf3s145ZZA">
+              <language>C++</language>
+              <body>NULL</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_y_nI0MfMEeeLjf3s145ZZA" name="timing" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+            <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4RR2wMfMEeeLjf3s145ZZA" name="warningEnabled" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="__bD84MfMEeeLjf3s145ZZA"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_JNXrQC7wEeu_GNTUne6_Eg" name="damaged" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_JNXrQS7wEeu_GNTUne6_Eg"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_DJtNwC7yEeu_GNTUne6_Eg" name="fromBedMovementSpeedSimulation" visibility="public" type="_tEFacC7xEeu_GNTUne6_Eg" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true"/>
+          <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_hB_FoMfMEeeLjf3s145ZZA" name="Updater" isActive="true" isReentrant="false">
+            <region xmi:type="uml:Region" xmi:id="_hCFzUMfMEeeLjf3s145ZZA" name="Region">
+              <transition xmi:type="uml:Transition" xmi:id="_hCL58MfMEeeLjf3s145ZZA" name="Initial" source="_hCHogMfMEeeLjf3s145ZZA" target="_hCKEwMfMEeeLjf3s145ZZA"/>
+              <transition xmi:type="uml:Transition" xmi:id="_oIfOQMfMEeeLjf3s145ZZA" kind="external" source="_hCKEwMfMEeeLjf3s145ZZA" target="_m4_8UMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_t6g3QMfMEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->rotationSensor = msg->getParam(0);
+timing.informEvery(UMLRTTimespec(0, 33000000)); // GUI Update Interval
+</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_ouooQMfMEeeLjf3s145ZZA" event="_jaU8MMevEeeLjf3s145ZZA" port="_brsWYMfMEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_0p0A0MfMEeeLjf3s145ZZA" name="" kind="external" source="_m4_8UMfMEeeLjf3s145ZZA" target="_m4_8UMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Xha44MfNEeeLjf3s145ZZA" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>std::cout &lt;&lt; &quot;[damaged=&quot; &lt;&lt; this->damaged &lt;&lt; &quot;,warning=&quot; &lt;&lt; this->warningEnabled &lt;&lt; &quot;,angle=&quot; &lt;&lt; ((float)(((RotationSensor*)this->rotationSensor)->counter) * Constants::MAX_ANGLE / Constants::PULSE_COUNT) &lt;&lt; &quot;,speedConf=&quot; &lt;&lt; ((RotationSensor*)this->rotationSensor)->currentSpeed &lt;&lt; &quot;]&quot; &lt;&lt; std::endl;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_1NqUwMfMEeeLjf3s145ZZA" port="_y_nI0MfMEeeLjf3s145ZZA">
+                  <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+                </trigger>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_TCbfkMlCEeeR0JvhXWFsNA" name="" kind="external" source="_m4_8UMfMEeeLjf3s145ZZA" target="_m4_8UMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_b38HsMlCEeeR0JvhXWFsNA" name="OpaqueBehavior1" visibility="public">
+                  <language>C++</language>
+                  <body>this->warningEnabled = enable;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_XLzvwMlCEeeR0JvhXWFsNA" event="_M956wLm_Eeejd5TF5NVUeg" port="_QkEhsMfMEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_AJU2IMlDEeeR0JvhXWFsNA" name="" kind="external" source="_hCKEwMfMEeeLjf3s145ZZA" target="_hCKEwMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_HfKbQMlDEeeR0JvhXWFsNA">
+                  <language>C++</language>
+                  <body>this->warningEnabled = enable;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_ApcgoMlDEeeR0JvhXWFsNA" event="_M956wLm_Eeejd5TF5NVUeg" port="_QkEhsMfMEeeLjf3s145ZZA"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_zNPmgC7wEeu_GNTUne6_Eg" name="" kind="external" source="_hCKEwMfMEeeLjf3s145ZZA" target="_hCKEwMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_cuAucC7yEeu_GNTUne6_Eg" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->damaged = true;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_W5fyIC7yEeu_GNTUne6_Eg" event="_uqqnoC76Eeu_GNTUne6_Eg" port="_DJtNwC7yEeu_GNTUne6_Eg"/>
+              </transition>
+              <transition xmi:type="uml:Transition" xmi:id="_nlGMwC7yEeu_GNTUne6_Eg" name="" kind="external" source="_m4_8UMfMEeeLjf3s145ZZA" target="_m4_8UMfMEeeLjf3s145ZZA">
+                <effect xmi:type="uml:OpaqueBehavior" xmi:id="_vbuKwC7yEeu_GNTUne6_Eg" name="Effect" isReentrant="false">
+                  <language>C++</language>
+                  <body>this->damaged = true;</body>
+                </effect>
+                <trigger xmi:type="uml:Trigger" xmi:id="_pr1PwC7yEeu_GNTUne6_Eg" event="_uqqnoC76Eeu_GNTUne6_Eg" port="_DJtNwC7yEeu_GNTUne6_Eg"/>
+              </transition>
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_hCHogMfMEeeLjf3s145ZZA" kind="initial"/>
+              <subvertex xmi:type="uml:State" xmi:id="_hCKEwMfMEeeLjf3s145ZZA" name="receivePointerToRotationSensor"/>
+              <subvertex xmi:type="uml:State" xmi:id="_m4_8UMfMEeeLjf3s145ZZA" name="online"/>
+            </region>
+          </ownedBehavior>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_xiLdUMfTEeemDPQj2b_Z9w" name="GUIIncomingEventsRequiresConstants" client="_mXK-cMfIEeeLjf3s145ZZA" supplier="_XLTQ8LnBEeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_PbldYMfREee1PdhFjg0tCQ" name="BedMovementSpeedSimulationRequiresConstants" client="_TX8y0MexEeeLjf3s145ZZA" supplier="_XLTQ8LnBEeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:Dependency" xmi:id="_B3psYMfTEeemDPQj2b_Z9w" name="GUIOutgoingUpdatesRequiresConstants" client="_7p7qEMfLEeeLjf3s145ZZA" supplier="_XLTQ8LnBEeejd5TF5NVUeg"/>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tELhEC7xEeu_GNTUne6_Eg" name="DamagedProtocol">
+          <packagedElement xmi:type="uml:Collaboration" xmi:id="_tEFacC7xEeu_GNTUne6_Eg" name="DamagedProtocol" visibility="public">
+            <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tEVSEC7xEeu_GNTUne6_Eg" client="_tEFacC7xEeu_GNTUne6_Eg" supplier="_tEQZkC7xEeu_GNTUne6_Eg" contract="_tEQZkC7xEeu_GNTUne6_Eg"/>
+            <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_tEgRMC7xEeu_GNTUne6_Eg" client="_tEFacC7xEeu_GNTUne6_Eg" supplier="_tEb_wS7xEeu_GNTUne6_Eg" contract="_tEb_wS7xEeu_GNTUne6_Eg"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_tEQZkC7xEeu_GNTUne6_Eg" name="DamagedProtocol"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_tEXHQC7xEeu_GNTUne6_Eg" name="DamagedProtocol~">
+            <ownedOperation xmi:type="uml:Operation" xmi:id="_uqnkUC76Eeu_GNTUne6_Eg" name="setDamaged"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_tEaxoC7xEeu_GNTUne6_Eg" client="_tEFacC7xEeu_GNTUne6_Eg" supplier="_tEXHQC7xEeu_GNTUne6_Eg"/>
+          <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_tEb_wC7xEeu_GNTUne6_Eg" name="*"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_tEb_wS7xEeu_GNTUne6_Eg" name="DamagedProtocolIO"/>
+          <packagedElement xmi:type="uml:Usage" xmi:id="_tEg4QC7xEeu_GNTUne6_Eg" client="_tEFacC7xEeu_GNTUne6_Eg" supplier="_tEb_wS7xEeu_GNTUne6_Eg"/>
+          <packagedElement xmi:type="uml:CallEvent" xmi:id="_uqqnoC76Eeu_GNTUne6_Eg" operation="_uqnkUC76Eeu_GNTUne6_Eg"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_I6Q7kLzzEeeWJamxl67WTw" name="implementation">
+      <packagedElement xmi:type="uml:Class" xmi:id="_KYplILzzEeeWJamxl67WTw" name="BedControl" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_WDmwYLzzEeeWJamxl67WTw" name="toVehicleCockpit" visibility="public" type="_LMsb0Lm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false" isService="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_6GhlALzzEeeT9eb0GxHqbg" name="fromMovementSensor" type="_knqaULm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_7xCmELzzEeeT9eb0GxHqbg" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_7xeq8LzzEeeT9eb0GxHqbg" value="5"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_nr1V4Lz0EeeT9eb0GxHqbg" name="fromJoystick" type="_TizyMLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pPmOsLz0EeeT9eb0GxHqbg" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_pP5JoLz0EeeT9eb0GxHqbg" value="5"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_qz_ZoLz0EeeT9eb0GxHqbg" name="fromBedSensors" type="_urcB0Lm-Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_sYbA0Lz0EeeT9eb0GxHqbg" value="5"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_sYpqULz0EeeT9eb0GxHqbg" value="5"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_6qibkLz0EeeT9eb0GxHqbg" name="toMotorControl" type="_eVWHsLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="false"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_4yxD8MewEeeLjf3s145ZZA" name="fromRotationSensorPointer" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="false" isConjugated="false" isService="true"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_f_bxwMfzEeel_eYEdvwXwA" name="motionControl" visibility="protected" type="_SHtpcMfyEeel_eYEdvwXwA" isOrdered="true" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_IgKIYM3cEee_k6VmQ7ca2g" name="rotationControl" visibility="protected" type="_YFfnkMy1Eee23YbJDodh0Q" isOrdered="true" aggregation="composite"/>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_h7w7kMfzEeel_eYEdvwXwA" name="RTConnector1">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_h70l8MfzEeel_eYEdvwXwA" partWithPort="_f_bxwMfzEeel_eYEdvwXwA" role="_Wp6pUMfyEeel_eYEdvwXwA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_h71NAMfzEeel_eYEdvwXwA" role="_nr1V4Lz0EeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_ijKSwMfzEeel_eYEdvwXwA" name="RTConnector2">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ijNWEMfzEeel_eYEdvwXwA" role="_6qibkLz0EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_ijNWEcfzEeel_eYEdvwXwA" partWithPort="_f_bxwMfzEeel_eYEdvwXwA" role="_VDeP8MfyEeel_eYEdvwXwA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_LknsAM3pEee_k6VmQ7ca2g" name="RTConnector6">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_LktLkM3pEee_k6VmQ7ca2g" partWithPort="_IgKIYM3cEee_k6VmQ7ca2g" role="_e3NL8My1Eee23YbJDodh0Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_LktyoM3pEee_k6VmQ7ca2g" role="_4yxD8MewEeeLjf3s145ZZA"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_PXAYgM3pEee_k6VmQ7ca2g" name="RTConnector7">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_PXC0wM3pEee_k6VmQ7ca2g" role="_qz_ZoLz0EeeT9eb0GxHqbg"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_PXDb0M3pEee_k6VmQ7ca2g" partWithPort="_IgKIYM3cEee_k6VmQ7ca2g" role="_q6YikMy4Eee23YbJDodh0Q"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_rhGgAM5HEeeYO9H5ZDfnyA" name="RTConnector9">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rhI8QM5HEeeYO9H5ZDfnyA" partWithPort="_f_bxwMfzEeel_eYEdvwXwA" role="_ozcOoM5BEeeYO9H5ZDfnyA"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_rhI8Qc5HEeeYO9H5ZDfnyA" role="_6GhlALzzEeeT9eb0GxHqbg"/>
+        </ownedConnector>
+        <ownedConnector xmi:type="uml:Connector" xmi:id="_DSCmkC9DEeuGX9rTug_ohA" name="RTConnector10">
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DSG4AC9DEeuGX9rTug_ohA" partWithPort="_IgKIYM3cEee_k6VmQ7ca2g" role="_hsD5MMy1Eee23YbJDodh0Q"/>
+          <end xmi:type="uml:ConnectorEnd" xmi:id="_DSHfEC9DEeuGX9rTug_ohA" partWithPort="_f_bxwMfzEeel_eYEdvwXwA" role="_vJ07IC9CEeuGX9rTug_ohA"/>
+        </ownedConnector>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SHtpcMfyEeel_eYEdvwXwA" name="MotionControl" classifierBehavior="_bC40sMfyEeel_eYEdvwXwA" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_VDeP8MfyEeel_eYEdvwXwA" name="toMotor" visibility="public" type="_eVWHsLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Wp6pUMfyEeel_eYEdvwXwA" name="fromJoystick" visibility="public" type="_TizyMLm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_X6CK4MlGEeeW4-w3OhOVwg" name="timing" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_YD9hkM3pEee_k6VmQ7ca2g" name="log" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_6kIb0IeXEeSVyrlWP4nYew"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_ozcOoM5BEeeYO9H5ZDfnyA" name="fromMovementSensor" visibility="public" type="_knqaULm_Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_vJ07IC9CEeuGX9rTug_ohA" name="fromRotationControl" visibility="public" type="_R0GiAMy1Eee23YbJDodh0Q" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_bC40sMfyEeel_eYEdvwXwA" name="StateMachine" isReentrant="false">
+          <region xmi:type="uml:Region" xmi:id="_bDEa4MfyEeel_eYEdvwXwA" name="Region">
+            <transition xmi:type="uml:Transition" xmi:id="_Y9DB4M46EeeYO9H5ZDfnyA" name="" kind="external" source="___Ou4M44EeeYO9H5ZDfnyA" target="_PzcZEM46EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_fBScQM46EeeYO9H5ZDfnyA" constrainedElement="_bqqesM46EeeYO9H5ZDfnyA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_fBTqYc46EeeYO9H5ZDfnyA">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_UP;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_bqqesM46EeeYO9H5ZDfnyA" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_JcJboM5BEeeYO9H5ZDfnyA" kind="external" source="_bDG3IMfyEeel_eYEdvwXwA" target="_qtyqIC9BEeuGX9rTug_ohA"/>
+            <transition xmi:type="uml:Transition" xmi:id="_MJcwUC88EeuofL5TEhXwIQ" name="" kind="external" source="_PzcZEM46EeeYO9H5ZDfnyA" target="___Ou4M44EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_T4uJIC88EeuofL5TEhXwIQ" constrainedElement="_QZ4DsC88EeuofL5TEhXwIQ">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_T4xzgC88EeuofL5TEhXwIQ">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_IDLE;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_QZ4DsC88EeuofL5TEhXwIQ" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_6EUvQC9BEeuGX9rTug_ohA" name="" kind="external" source="___Ou4M44EeeYO9H5ZDfnyA" target="_rxKysC9BEeuGX9rTug_ohA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_iqkIoC9DEeuGX9rTug_ohA" constrainedElement="_Zd16YC9DEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_iqkvsS9DEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_DOWN;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Zd16YC9DEeuGX9rTug_ohA" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_6pyz0C9BEeuGX9rTug_ohA" name="" kind="external" source="_rxKysC9BEeuGX9rTug_ohA" target="___Ou4M44EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_ZAGOcC9DEeuGX9rTug_ohA" constrainedElement="_XYsLwC9DEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_ZAG1gS9DEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_IDLE;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_XYsLwC9DEeuGX9rTug_ohA" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_8TofcC9BEeuGX9rTug_ohA" name="" kind="external" source="_PzcZEM46EeeYO9H5ZDfnyA" target="_ptLhsC9BEeuGX9rTug_ohA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="__SExEC9CEeuGX9rTug_ohA" constrainedElement="_6cwn8C9CEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="__SGmQC9CEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return angle >= 50.0f;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_6cwn8C9CEeuGX9rTug_ohA" event="_TgWocMy1Eee23YbJDodh0Q" port="_vJ07IC9CEeuGX9rTug_ohA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_AcwQ8C9CEeuGX9rTug_ohA" name="" kind="external" source="_ptLhsC9BEeuGX9rTug_ohA" target="_rxKysC9BEeuGX9rTug_ohA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_lrqiIC9DEeuGX9rTug_ohA" constrainedElement="_jNi54C9DEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_lrrwQC9DEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_DOWN;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_jNi54C9DEeuGX9rTug_ohA" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_A8m1sC9CEeuGX9rTug_ohA" name="" kind="external" source="_qtyqIC9BEeuGX9rTug_ohA" target="_PzcZEM46EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_n8KlIC9DEeuGX9rTug_ohA" constrainedElement="_mBmV4C9DEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_n8LMMS9DEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_UP;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_mBmV4C9DEeuGX9rTug_ohA" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_BtF3cC9CEeuGX9rTug_ohA" name="" kind="external" source="_rxKysC9BEeuGX9rTug_ohA" target="_qtyqIC9BEeuGX9rTug_ohA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_JxSh8C9DEeuGX9rTug_ohA" constrainedElement="_HGRGIC9DEeuGX9rTug_ohA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_JxTJAC9DEeuGX9rTug_ohA">
+                  <language>C++</language>
+                  <body>return angle &lt;= 0.0f;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_HGRGIC9DEeuGX9rTug_ohA" event="_TgWocMy1Eee23YbJDodh0Q" port="_vJ07IC9CEeuGX9rTug_ohA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_lZ4ZIC9EEeulBode__Jnbw" name="" kind="external" source="_PzcZEM46EeeYO9H5ZDfnyA" target="_rxKysC9BEeuGX9rTug_ohA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_rhR1MC9EEeulBode__Jnbw" constrainedElement="_oRRdAC9EEeulBode__Jnbw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_rhU4gC9EEeulBode__Jnbw">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_DOWN;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_oRRdAC9EEeulBode__Jnbw" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_2s0gkC9EEeulBode__Jnbw" name="" kind="external" source="_rxKysC9BEeuGX9rTug_ohA" target="_PzcZEM46EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="__OAegC9EEeulBode__Jnbw" constrainedElement="_-AErwC9EEeulBode__Jnbw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="__OBsoC9EEeulBode__Jnbw">
+                  <language>C++</language>
+                  <body>return position == Constants::JS_UP;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_-AErwC9EEeulBode__Jnbw" event="_VsVDcLm_Eeejd5TF5NVUeg" port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_bDG3IMfyEeel_eYEdvwXwA" kind="initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="___Ou4M44EeeYO9H5ZDfnyA" name="idle">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_XgqG8M47EeeYO9H5ZDfnyA" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>toMotor.setMotorSpeed(Constants::MOTOR_OFF).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_PzcZEM46EeeYO9H5ZDfnyA" name="up">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_Y3VmAM47EeeYO9H5ZDfnyA" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>toMotor.setMotorSpeed(Constants::MOTOR_UP_SLOW).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_ptLhsC9BEeuGX9rTug_ohA" name="idle_50">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_xzzqkC9BEeuGX9rTug_ohA" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>toMotor.setMotorSpeed(Constants::MOTOR_OFF).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_qtyqIC9BEeuGX9rTug_ohA" name="idle_0">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_xFJNwC9BEeuGX9rTug_ohA" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>toMotor.setMotorSpeed(Constants::MOTOR_OFF).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_rxKysC9BEeuGX9rTug_ohA" name="down">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_vRuIUC9BEeuGX9rTug_ohA" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>toMotor.setMotorSpeed(Constants::MOTOR_DOWN_SLOW).send();</body>
+              </entry>
+            </subvertex>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_R5pJUMy1Eee23YbJDodh0Q" name="AngleProtocol">
+        <packagedElement xmi:type="uml:Collaboration" xmi:id="_R0GiAMy1Eee23YbJDodh0Q" name="AngleProtocol">
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_R6I4kMy1Eee23YbJDodh0Q" client="_R0GiAMy1Eee23YbJDodh0Q" supplier="_R59SYMy1Eee23YbJDodh0Q" contract="_R59SYMy1Eee23YbJDodh0Q"/>
+          <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_R6bMcMy1Eee23YbJDodh0Q" client="_R0GiAMy1Eee23YbJDodh0Q" supplier="_R6VF0My1Eee23YbJDodh0Q" contract="_R6VF0My1Eee23YbJDodh0Q"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_R59SYMy1Eee23YbJDodh0Q" name="AngleProtocol">
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TfnBkMy1Eee23YbJDodh0Q" name="angleUpdated">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_V483gMy1Eee23YbJDodh0Q" name="angle">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7W3wkBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_R6Mi8My1Eee23YbJDodh0Q" name="AngleProtocol~"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_R6TQoMy1Eee23YbJDodh0Q" client="_R0GiAMy1Eee23YbJDodh0Q" supplier="_R6Mi8My1Eee23YbJDodh0Q"/>
+        <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_R6UewMy1Eee23YbJDodh0Q" name="*"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_R6VF0My1Eee23YbJDodh0Q" name="AngleProtocolIO"/>
+        <packagedElement xmi:type="uml:Usage" xmi:id="_R6dBoMy1Eee23YbJDodh0Q" client="_R0GiAMy1Eee23YbJDodh0Q" supplier="_R6VF0My1Eee23YbJDodh0Q"/>
+        <packagedElement xmi:type="uml:CallEvent" xmi:id="_TgWocMy1Eee23YbJDodh0Q" operation="_TfnBkMy1Eee23YbJDodh0Q"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YFfnkMy1Eee23YbJDodh0Q" name="RotationControl" classifierBehavior="_pfy7QMy1Eee23YbJDodh0Q" isActive="true">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_e3NL8My1Eee23YbJDodh0Q" name="fromRotationSensorPointer" visibility="public" type="_fu7BcMevEeeLjf3s145ZZA" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_hsD5MMy1Eee23YbJDodh0Q" name="angleUpdates" visibility="public" type="_R0GiAMy1Eee23YbJDodh0Q" isOrdered="true" aggregation="composite" isBehavior="true" isConjugated="true" isService="true">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1EvpwM6lEeeEX8VMnBFtQw" value="2"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1FXU0M6lEeeEX8VMnBFtQw" value="2"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_jzJhgMy1Eee23YbJDodh0Q" name="timing" visibility="protected" isOrdered="true" aggregation="composite" isBehavior="true" isService="false">
+          <type xmi:type="uml:Collaboration" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_MxQZgGXsEeS_4daqvwyFrg"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_z5U64My1Eee23YbJDodh0Q" name="rotationSensor" visibility="private" type="_VIWEUMevEeeLjf3s145ZZA">
+          <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_z5U64cy1Eee23YbJDodh0Q" type="_VIWEUMevEeeLjf3s145ZZA">
+            <language>C++</language>
+            <body>NULL</body>
+          </defaultValue>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_LSXd4My2Eee23YbJDodh0Q" name="ntrue" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_QFEX4My2Eee23YbJDodh0Q" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_QrUfkMy2Eee23YbJDodh0Q" name="nfalse" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusC_Cpp_LIBRARIES/AnsiCLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+          <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_QrUfkcy2Eee23YbJDodh0Q" value="0"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_q6YikMy4Eee23YbJDodh0Q" name="fromBedSensor" visibility="public" type="_urcB0Lm-Eeejd5TF5NVUeg" isOrdered="true" aggregation="composite" isBehavior="true" isService="true"/>
+        <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_pfy7QMy1Eee23YbJDodh0Q" name="StateMachine" isReentrant="false">
+          <region xmi:type="uml:Region" xmi:id="_pgAWoMy1Eee23YbJDodh0Q" name="Region">
+            <transition xmi:type="uml:Transition" xmi:id="_pgNK8My1Eee23YbJDodh0Q" name="Initial" source="_pgDZ8My1Eee23YbJDodh0Q" target="_pgKHoMy1Eee23YbJDodh0Q"/>
+            <transition xmi:type="uml:Transition" xmi:id="__ACJkMy1Eee23YbJDodh0Q" name="" kind="external" source="_pgKHoMy1Eee23YbJDodh0Q" target="_58cB0M4_EeeYO9H5ZDfnyA">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_BTfZ8My2Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->rotationSensor = msg->getParam(0);
+this->ntrue = 0;
+this->nfalse = 0;</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="__V-kYMy1Eee23YbJDodh0Q" event="_jaU8MMevEeeLjf3s145ZZA" port="_e3NL8My1Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_0k9cYMy2Eee23YbJDodh0Q" name="" kind="external" source="_7P2cgMy1Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_4VyCoMy2Eee23YbJDodh0Q" constrainedElement="_1E4SkMy2Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_4Vz30My2Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_1E4SkMy2Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_22MCsMy3Eee23YbJDodh0Q" name="" kind="external" source="_7P2cgMy1Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_71lU4My3Eee23YbJDodh0Q" constrainedElement="_4x6IgMy3Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_71mjAMy3Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_4x6IgMy3Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_9sP7kMy3Eee23YbJDodh0Q" name="" kind="external" source="_NIn_cMy3Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_AdYmcMy4Eee23YbJDodh0Q" constrainedElement="__Gnn0My3Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_AdZ0kcy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="__Gnn0My3Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Ca1KkMy4Eee23YbJDodh0Q" name="" kind="external" source="_JIB30My3Eee23YbJDodh0Q" target="_MB5n8My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Iu6-0My4Eee23YbJDodh0Q" constrainedElement="_GE_IIMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_Iu7l4My4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_YU6cQMy4Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue--;</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_GE_IIMy4Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_DAMhcMy4Eee23YbJDodh0Q" name="" kind="external" source="_MB5n8My3Eee23YbJDodh0Q" target="_JIB30My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_PGj2UMy4Eee23YbJDodh0Q" constrainedElement="_NjycAMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_PGlEcMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_QhsXkMy4Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->nfalse--;</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_NjycAMy4Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_EVT6QMy4Eee23YbJDodh0Q" name="" kind="external" source="_KSzB0My3Eee23YbJDodh0Q" target="_LSLbMMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Sdeu0My4Eee23YbJDodh0Q" constrainedElement="_Q4mbsMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_SdfV4cy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_V7AloMy4Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue++;</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Q4mbsMy4Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_FNUgUMy4Eee23YbJDodh0Q" name="" kind="external" source="_LSLbMMy3Eee23YbJDodh0Q" target="_KSzB0My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_UE4KcMy4Eee23YbJDodh0Q" constrainedElement="_S1qlUMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_UE5YkMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_WadhwMy4Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->nfalse++;</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_S1qlUMy4Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_bzNIEMy4Eee23YbJDodh0Q" name="" kind="external" source="_KSzB0My3Eee23YbJDodh0Q" target="_JIB30My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_xnJVgMy4Eee23YbJDodh0Q" constrainedElement="_uTqykMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_xnKjoMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return moveDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_uTqykMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_cj92oMy4Eee23YbJDodh0Q" name="" kind="external" source="_JIB30My3Eee23YbJDodh0Q" target="_KSzB0My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_0L9boMy4Eee23YbJDodh0Q" constrainedElement="_y1EhMMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_0L-pwMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return moveUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_y1EhMMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_dcVCAMy4Eee23YbJDodh0Q" name="" kind="external" source="_JIB30My3Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_-i1I0My4Eee23YbJDodh0Q" constrainedElement="_9fYHwMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_-i2W8My4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !moveUp &amp;&amp; !moveDown &amp;&amp; !isDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_9fYHwMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_eFrhAMy4Eee23YbJDodh0Q" name="" kind="external" source="_KSzB0My3Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_9B13MMy4Eee23YbJDodh0Q" constrainedElement="_7J9IgMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_9B2eQMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !moveUp &amp;&amp; !moveDown &amp;&amp; !isUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_7J9IgMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_g2LSsMy4Eee23YbJDodh0Q" name="" kind="external" source="_JIB30My3Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_4wn5oMy4Eee23YbJDodh0Q" constrainedElement="_3ls-oMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_4wpHwMy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return isDown;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_K9UTkMy5Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue = 0;
+this->nfalse = 0;
+angleUpdates.angleUpdated(0).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_3ls-oMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_hj3fIMy4Eee23YbJDodh0Q" name="" kind="external" source="_KSzB0My3Eee23YbJDodh0Q" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_2kIz8My4Eee23YbJDodh0Q" constrainedElement="_1hWhQMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_2kKCEcy4Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return isUp;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_R3dbMMy5Eee23YbJDodh0Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue  = Constants::PULSE_COUNT;
+this->nfalse = Constants::PULSE_COUNT;
+angleUpdates.angleUpdated(Constants::MAX_ANGLE).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_1hWhQMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_iNPzUMy4Eee23YbJDodh0Q" name="" kind="external" source="_7P2cgMy1Eee23YbJDodh0Q" target="_KSzB0My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_DEwb4My5Eee23YbJDodh0Q" constrainedElement="_B-ohUMy5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_DExqAMy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return moveUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_B-ohUMy5Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_i6SfgMy4Eee23YbJDodh0Q" name="" kind="external" source="_7P2cgMy1Eee23YbJDodh0Q" target="_JIB30My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Bpv2cMy5Eee23YbJDodh0Q" constrainedElement="___15YMy4Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_BpwdgMy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return moveDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="___15YMy4Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_TX_Z0My5Eee23YbJDodh0Q" name="" kind="external" source="_JIB30My3Eee23YbJDodh0Q" target="_JIB30My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_U95nsMy5Eee23YbJDodh0Q" constrainedElement="_T35B4My5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_U96Owcy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_T35B4My5Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_ZBXdIMy5Eee23YbJDodh0Q" name="" kind="external" source="_KSzB0My3Eee23YbJDodh0Q" target="_KSzB0My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_afuRgMy5Eee23YbJDodh0Q" constrainedElement="_Ze5tsMy5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_afvfoMy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Ze5tsMy5Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_brx08My5Eee23YbJDodh0Q" name="" kind="external" source="_LSLbMMy3Eee23YbJDodh0Q" target="_LSLbMMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_dpQOQMy5Eee23YbJDodh0Q" constrainedElement="_cKE6gMy5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_dpQ1UMy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_cKE6gMy5Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_d6_egMy5Eee23YbJDodh0Q" name="" kind="external" source="_MB5n8My3Eee23YbJDodh0Q" target="_MB5n8My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_fIM4gMy5Eee23YbJDodh0Q" constrainedElement="_eV8VIMy5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_fINfkcy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_eV8VIMy5Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_x0W1oMy5Eee23YbJDodh0Q" name="" kind="external" source="_LSLbMMy3Eee23YbJDodh0Q" target="_MB5n8My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_loLWgM3TEeemm4jyvrV52Q" constrainedElement="_jzlMYM3TEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_loL9kc3TEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return moveDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_jzlMYM3TEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_yZVK8My5Eee23YbJDodh0Q" name="" kind="external" source="_MB5n8My3Eee23YbJDodh0Q" target="_LSLbMMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_WgnhgM3TEeemm4jyvrV52Q" constrainedElement="_T63nQM3TEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_WgrL4M3TEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return moveUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_T63nQM3TEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_zGCf8My5Eee23YbJDodh0Q" name="" kind="external" source="_LSLbMMy3Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_DdWFkMy6Eee23YbJDodh0Q" constrainedElement="_AP9jkMy6Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_DdWsocy6Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return !moveUp &amp;&amp; !moveDown &amp;&amp; !isUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_AP9jkMy6Eee23YbJDodh0Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_zjvvoMy5Eee23YbJDodh0Q" name="" kind="external" source="_MB5n8My3Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_tNXmQM3TEeemm4jyvrV52Q" constrainedElement="_qZ8cYM3TEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_tNY0YM3TEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return !moveUp &amp;&amp; !moveDown &amp;&amp; !isDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_qZ8cYM3TEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_1SLAUMy5Eee23YbJDodh0Q" name="" kind="external" source="_MB5n8My3Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_OmXLQM3UEeemm4jyvrV52Q" constrainedElement="_MA6zAM3UEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_OmYZYM3UEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return isDown;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_QELNEM3UEeemm4jyvrV52Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue = 0;
+this->nfalse = 0;
+angleUpdates.angleUpdated(0).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_MA6zAM3UEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_1rgtYMy5Eee23YbJDodh0Q" name="" kind="external" source="_LSLbMMy3Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_THd-8M3UEeemm4jyvrV52Q" constrainedElement="_Q35wEM3UEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_THfNEM3UEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return isUp;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ceXc4M3UEeemm4jyvrV52Q" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>this->ntrue  = Constants::PULSE_COUNT;
+this->nfalse = Constants::PULSE_COUNT;
+angleUpdates.angleUpdated(Constants::MAX_ANGLE).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Q35wEM3UEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_2JitMMy5Eee23YbJDodh0Q" name="" kind="external" source="_NIn_cMy3Eee23YbJDodh0Q" target="_LSLbMMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_fnvBkM3UEeemm4jyvrV52Q" constrainedElement="_d4NksM3UEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_fnwPsM3UEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return moveUp;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_d4NksM3UEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_2k5McMy5Eee23YbJDodh0Q" name="" kind="external" source="_NIn_cMy3Eee23YbJDodh0Q" target="_MB5n8My3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_jchh0M3UEeemm4jyvrV52Q" constrainedElement="_iA0_4M3UEeemm4jyvrV52Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_jciv8M3UEeemm4jyvrV52Q">
+                  <language>C++</language>
+                  <body>return moveDown;</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_iA0_4M3UEeemm4jyvrV52Q" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_3H-rYMy5Eee23YbJDodh0Q" name="" kind="external" source="_NIn_cMy3Eee23YbJDodh0Q" target="_NIn_cMy3Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_8RTVoMy5Eee23YbJDodh0Q" constrainedElement="_6UVSoMy5Eee23YbJDodh0Q">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_8RUjwMy5Eee23YbJDodh0Q">
+                  <language>C++</language>
+                  <body>return ((RotationSensor*)this->rotationSensor)->poll();</body>
+                </specification>
+              </ownedRule>
+              <trigger xmi:type="uml:Trigger" xmi:id="_6UVSoMy5Eee23YbJDodh0Q" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_HcRrEM5AEeeYO9H5ZDfnyA" name="" kind="external" source="_58cB0M4_EeeYO9H5ZDfnyA" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_KRdvgM5AEeeYO9H5ZDfnyA" constrainedElement="_H8HBsM5AEeeYO9H5ZDfnyA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_KRe9oM5AEeeYO9H5ZDfnyA">
+                  <language>C++</language>
+                  <body>return isDown;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_YkizkM5AEeeYO9H5ZDfnyA" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>angleUpdates.angleUpdated(0).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_H8HBsM5AEeeYO9H5ZDfnyA" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_KkuCsM5AEeeYO9H5ZDfnyA" name="" kind="external" source="_8YXRsM4_EeeYO9H5ZDfnyA" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_L_uBEM5AEeeYO9H5ZDfnyA" constrainedElement="_LFiQwM5AEeeYO9H5ZDfnyA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_L_vPMM5AEeeYO9H5ZDfnyA">
+                  <language>C++</language>
+                  <body>return isDown;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Y1PiAM5AEeeYO9H5ZDfnyA" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>angleUpdates.angleUpdated(0).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_LFiQwM5AEeeYO9H5ZDfnyA" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_NN32QM5AEeeYO9H5ZDfnyA" name="" kind="external" source="_58cB0M4_EeeYO9H5ZDfnyA" target="_8YXRsM4_EeeYO9H5ZDfnyA">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_S1dJ0M5AEeeYO9H5ZDfnyA" constrainedElement="_NsRpgM5AEeeYO9H5ZDfnyA">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_S1dw4c5AEeeYO9H5ZDfnyA">
+                  <language>C++</language>
+                  <body>// when started in an undefined state...
+return !(isUp || isDown || moveUp || moveDown);</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_0P2dAM5AEeeYO9H5ZDfnyA" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>angleUpdates.angleUpdated(4).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_NsRpgM5AEeeYO9H5ZDfnyA" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_qe2dAM5AEeeYO9H5ZDfnyA" name="" kind="external" source="_8YXRsM4_EeeYO9H5ZDfnyA" target="_8YXRsM4_EeeYO9H5ZDfnyA">
+              <trigger xmi:type="uml:Trigger" xmi:id="_w5ch4M5AEeeYO9H5ZDfnyA" port="_jzJhgMy1Eee23YbJDodh0Q">
+                <event xmi:type="uml:CallEvent" href="pathmap://UMLRTRTSLIB/UMLRT-RTS.uml#_IaEO8HDxEeSwWKwNKw1iAA"/>
+              </trigger>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_88ockN97EeemX-oXetmAWw" name="" kind="external" source="_8YXRsM4_EeeYO9H5ZDfnyA" target="_7P2cgMy1Eee23YbJDodh0Q">
+              <ownedRule xmi:type="uml:Constraint" xmi:id="_Ds_WEN98EeemX-oXetmAWw" constrainedElement="_Bxw_gN98EeemX-oXetmAWw">
+                <specification xmi:type="uml:OpaqueExpression" xmi:id="_DtByUN98EeemX-oXetmAWw">
+                  <language>C++</language>
+                  <body>return isUp;</body>
+                </specification>
+              </ownedRule>
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_HD8q0N98EeemX-oXetmAWw" name="Effect" isReentrant="false">
+                <language>C++</language>
+                <body>// This case is not immediately obvious:
+// Whenever we hit the upper sensor during reset we set the angle to max.
+// This can happen because one can interrupt the reset process with the joystick and then go upwards.
+// In this case, the actual angle is only known once the sensor is hit and it will then return `isUp`!
+this->ntrue  = Constants::PULSE_COUNT;
+this->nfalse = Constants::PULSE_COUNT;
+angleUpdates.angleUpdated(Constants::MAX_ANGLE).send();</body>
+              </effect>
+              <trigger xmi:type="uml:Trigger" xmi:id="_Bxw_gN98EeemX-oXetmAWw" event="_6xgbwLm-Eeejd5TF5NVUeg" port="_q6YikMy4Eee23YbJDodh0Q"/>
+            </transition>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_pgDZ8My1Eee23YbJDodh0Q" kind="initial"/>
+            <subvertex xmi:type="uml:State" xmi:id="_pgKHoMy1Eee23YbJDodh0Q" name="waitForRotationSensorPointer"/>
+            <subvertex xmi:type="uml:State" xmi:id="_7P2cgMy1Eee23YbJDodh0Q" name="hltf"/>
+            <subvertex xmi:type="uml:State" xmi:id="_JIB30My3Eee23YbJDodh0Q" name="downf">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_paOM0My3Eee23YbJDodh0Q" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>float sensorVal = (float)(this->ntrue+this->nfalse)*Constants::MAX_ANGLE/(2*Constants::PULSE_COUNT);
+angleUpdates.angleUpdated(sensorVal &lt;= 0.0f? 0.05f: (sensorVal >= 50.0f? 49.95f: sensorVal)).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_KSzB0My3Eee23YbJDodh0Q" name="upf">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_puWCsMy3Eee23YbJDodh0Q" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>float sensorVal = (float)(this->ntrue+this->nfalse)*Constants::MAX_ANGLE/(2*Constants::PULSE_COUNT);
+angleUpdates.angleUpdated(sensorVal &lt;= 0.0f? 0.05f: (sensorVal >= 50.0f? 49.95f: sensorVal)).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_LSLbMMy3Eee23YbJDodh0Q" name="upt">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_qAnecMy3Eee23YbJDodh0Q" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>float sensorVal = (float)(this->ntrue+this->nfalse)*Constants::MAX_ANGLE/(2*Constants::PULSE_COUNT);
+angleUpdates.angleUpdated(sensorVal &lt;= 0.0f? 0.05f: (sensorVal >= 50.0f? 49.95f: sensorVal)).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_MB5n8My3Eee23YbJDodh0Q" name="downt">
+              <entry xmi:type="uml:OpaqueBehavior" xmi:id="_qNF0MMy3Eee23YbJDodh0Q" name="Entry" isReentrant="false">
+                <language>C++</language>
+                <body>float sensorVal = (float)(this->ntrue+this->nfalse)*Constants::MAX_ANGLE/(2*Constants::PULSE_COUNT);
+angleUpdates.angleUpdated(sensorVal &lt;= 0.0f? 0.05f: (sensorVal >= 50.0f? 49.95f: sensorVal)).send();</body>
+              </entry>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_NIn_cMy3Eee23YbJDodh0Q" name="hltt"/>
+            <subvertex xmi:type="uml:State" xmi:id="_58cB0M4_EeeYO9H5ZDfnyA" name="potrst">
+              <exit xmi:type="uml:OpaqueBehavior" xmi:id="_m5YLIM5AEeeYO9H5ZDfnyA" name="Exit" isReentrant="false">
+                <language>C++</language>
+                <body>// polling interval (last multiplicator) is system specific.
+// known good values are 2, 12, 17
+timing.informEvery(UMLRTTimespec(0, 1000000000ll * Constants::MAX_ANGLE / (Constants::PULSE_COUNT * Constants::MOTOR_UP_FAST * 12)));</body>
+              </exit>
+            </subvertex>
+            <subvertex xmi:type="uml:State" xmi:id="_8YXRsM4_EeeYO9H5ZDfnyA" name="rst"/>
+          </region>
+        </ownedBehavior>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_q2LHQMfyEeel_eYEdvwXwA" name="MotionControlRequiresConstants" client="_SHtpcMfyEeel_eYEdvwXwA" supplier="_XLTQ8LnBEeejd5TF5NVUeg"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jC_acMy2Eee23YbJDodh0Q" name="RotationControlRequiresConstants" client="_YFfnkMy1Eee23YbJDodh0Q" supplier="_XLTQ8LnBEeejd5TF5NVUeg"/>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Z_VmMrm-Eeejd5TF5NVUeg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z_VmM7m-Eeejd5TF5NVUeg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/uml-rt.profile.uml#_1h74oEeVEeO0lv5O1DTHOQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Z_VmNLm-Eeejd5TF5NVUeg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z_VmNbm-Eeejd5TF5NVUeg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/statemachine#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_RT_PROFILE/UMLRealTimeSM-addendum.profile.uml#_KLcn0FDtEeOA4ecmvfqvaw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_Z_VmNrm-Eeejd5TF5NVUeg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Z_VmN7m-Eeejd5TF5NVUeg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/umlrt/cppproperties#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UMLRT_CPP/RTCppProperties.profile.uml#_vl5LALs8EeSTjNEQkASznQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_HxcBkMlEEeeR0JvhXWFsNA">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Hxed0MlEEeeR0JvhXWFsNA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLRealTime:ProtocolContainer xmi:id="_uvD9kLm-Eeejd5TF5NVUeg" base_Package="_uu928Lm-Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_uvnXMLm-Eeejd5TF5NVUeg" base_Interface="_uvh3oLm-Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_uv1ZoLm-Eeejd5TF5NVUeg" base_Interface="_uvv6ELm-Eeejd5TF5NVUeg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_uv-jkLm-Eeejd5TF5NVUeg" base_Interface="_uv5rELm-Eeejd5TF5NVUeg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_uwEDILm-Eeejd5TF5NVUeg" base_Collaboration="_urcB0Lm-Eeejd5TF5NVUeg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_LM0-sLm_Eeejd5TF5NVUeg" base_Package="_LMxUULm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_LM6eQLm_Eeejd5TF5NVUeg" base_Interface="_LM2z4Lm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_LNBL8Lm_Eeejd5TF5NVUeg" base_Interface="_LM86gLm_Eeejd5TF5NVUeg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_LNGEcLm_Eeejd5TF5NVUeg" base_Interface="_LNDoMLm_Eeejd5TF5NVUeg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_LNIgsLm_Eeejd5TF5NVUeg" base_Collaboration="_LMsb0Lm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_Ti5RwLm_Eeejd5TF5NVUeg" base_Package="_Ti21gLm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_Ti8VELm_Eeejd5TF5NVUeg" base_Interface="_Ti540Lm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_Ti__cLm_Eeejd5TF5NVUeg" base_Interface="_Ti9jMLm_Eeejd5TF5NVUeg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_TjDp0Lm_Eeejd5TF5NVUeg" base_Interface="_TjB0oLm_Eeejd5TF5NVUeg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_TjGGELm_Eeejd5TF5NVUeg" base_Collaboration="_TizyMLm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_eVbAMLm_Eeejd5TF5NVUeg" base_Package="_eVYj8Lm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_eVeDgLm_Eeejd5TF5NVUeg" base_Interface="_eVcOULm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_eVht4Lm_Eeejd5TF5NVUeg" base_Interface="_eVfRoLm_Eeejd5TF5NVUeg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_eVlYQLm_Eeejd5TF5NVUeg" base_Interface="_eVi8Abm_Eeejd5TF5NVUeg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_eVnNcLm_Eeejd5TF5NVUeg" base_Collaboration="_eVWHsLm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_knurwLm_Eeejd5TF5NVUeg" base_Package="_kns2kLm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_knyWILm_Eeejd5TF5NVUeg" base_Interface="_knvS0Lm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_kn1ZcLm_Eeejd5TF5NVUeg" base_Interface="_knzkQLm_Eeejd5TF5NVUeg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_kn5D0Lm_Eeejd5TF5NVUeg" base_Interface="_kn3OoLm_Eeejd5TF5NVUeg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_kn7gELm_Eeejd5TF5NVUeg" base_Collaboration="_knqaULm_Eeejd5TF5NVUeg"/>
+  <UMLRealTime:Capsule xmi:id="_2JRMoLzwEeeWJamxl67WTw" base_Class="_2GJnMLzwEeeWJamxl67WTw"/>
+  <UMLRealTime:Capsule xmi:id="_Dmc4kLzzEeeWJamxl67WTw" base_Class="_DmTHkLzzEeeWJamxl67WTw"/>
+  <UMLRealTime:CapsulePart xmi:id="_F6rlALzzEeeWJamxl67WTw" base_Property="_F6dikLzzEeeWJamxl67WTw"/>
+  <UMLRealTime:Capsule xmi:id="_KYyIALzzEeeWJamxl67WTw" base_Class="_KYplILzzEeeWJamxl67WTw"/>
+  <UMLRealTime:CapsulePart xmi:id="_LJiPgLzzEeeWJamxl67WTw" base_Property="_LJZsoLzzEeeWJamxl67WTw"/>
+  <UMLRealTime:RTPort xmi:id="_WD1Z4LzzEeeWJamxl67WTw" isPublish="false" isWired="true" base_Port="_WDmwYLzzEeeWJamxl67WTw"/>
+  <UMLRealTime:RTPort xmi:id="_6NzRsLzzEeeT9eb0GxHqbg" base_Port="_6GhlALzzEeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_nr6OYLz0EeeT9eb0GxHqbg" base_Port="_nr1V4Lz0EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_q0DrELz0EeeT9eb0GxHqbg" base_Port="_qz_ZoLz0EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_6qnUELz0EeeT9eb0GxHqbg" base_Port="_6qibkLz0EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_UmBGILz1EeeT9eb0GxHqbg" base_Port="_Ul-C0Lz1EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_YFk9QLz1EeeT9eb0GxHqbg" base_Port="_YFh58Lz1EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_iOFeULz1EeeT9eb0GxHqbg" base_Port="_iOCbALz1EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_kXNuALz1EeeT9eb0GxHqbg" base_Port="_kXKqsLz1EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTPort xmi:id="_oObQILz1EeeT9eb0GxHqbg" base_Port="_oOYM0Lz1EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTConnector xmi:id="_E2PlILz2EeeT9eb0GxHqbg" base_Connector="_E2D-8Lz2EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTConnector xmi:id="_L8SawLz2EeeT9eb0GxHqbg" base_Connector="_L8PXcLz2EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTConnector xmi:id="_P99gcbz2EeeT9eb0GxHqbg" base_Connector="_P97EMLz2EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTConnector xmi:id="_RpDwULz2EeeT9eb0GxHqbg" base_Connector="_RpAtALz2EeeT9eb0GxHqbg"/>
+  <UMLRealTime:RTConnector xmi:id="_TYIhQLz2EeeT9eb0GxHqbg" base_Connector="_TYFd8Lz2EeeT9eb0GxHqbg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_fvGnoMevEeeLjf3s145ZZA" base_Package="_fvC9QMevEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTMessageSet xmi:id="_fvK5EMevEeeLjf3s145ZZA" base_Interface="_fvIc0MevEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTMessageSet xmi:id="_fvQYoMevEeeLjf3s145ZZA" base_Interface="_fvN8YMevEeeLjf3s145ZZA" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_fvXtYMevEeeLjf3s145ZZA" base_Interface="_fvS04cevEeeLjf3s145ZZA" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_fvawsMevEeeLjf3s145ZZA" base_Collaboration="_fu7BcMevEeeLjf3s145ZZA"/>
+  <UMLRealTime:Capsule xmi:id="_stqIwMevEeeLjf3s145ZZA" base_Class="_ssnm8MevEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_w6-dwMevEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_w60FsMevEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_2d4ssMevEeeLjf3s145ZZA" base_Pseudostate="_2d1CUMevEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_2d-MQMevEeeLjf3s145ZZA" base_State="_2d7wAMevEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_2eABcMevEeeLjf3s145ZZA" base_Region="_2dx_AMevEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_2eHWMMevEeeLjf3s145ZZA" base_StateMachine="_2dg5QMevEeeLjf3s145ZZA"/>
+  <UMLRealTime:CapsulePart xmi:id="_j5yp8MewEeeLjf3s145ZZA" base_Property="_j5u_kMewEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_4y0HQMewEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_4yxD8MewEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_9hF0QMewEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_9hCJ4MewEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_CRtqocexEeeLjf3s145ZZA" base_Connector="_CRqnUMexEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_I7CvEMexEeeLjf3s145ZZA" base_Connector="_I6_rwMexEeeLjf3s145ZZA"/>
+  <UMLRealTime:Capsule xmi:id="_TYC5cMexEeeLjf3s145ZZA" base_Class="_TX8y0MexEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_xpSqYMexEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_xpPAAMexEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_1Gei8MexEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_1GbfoMexEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_-7A_IMexEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_-69UwMexEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_EDJWkMeyEeeLjf3s145ZZA" base_Pseudostate="_EDG6UMeyEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_EDMZ4MeyEeeLjf3s145ZZA" base_State="_EDKksMeyEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_EDNoAMeyEeeLjf3s145ZZA" base_Region="_EDFFIMeyEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_EDRSYMeyEeeLjf3s145ZZA" base_StateMachine="_EC9JUMeyEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_V_7sQMeyEeeLjf3s145ZZA" base_State="_V_4B4MeyEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_yTDHIMezEeeLjf3s145ZZA" base_State="_yTAq4MezEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_2ZRVoMezEeeLjf3s145ZZA" base_State="_2ZOSUMezEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_8mpd4MezEeeLjf3s145ZZA" base_State="_8mnBoMezEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_Y5Zh0Me0EeeLjf3s145ZZA" isPublish="false" isWired="false" base_Port="_Y5Gm4Me0EeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_ZGbw4Me3EeeLjf3s145ZZA" base_Constraint="_ZGZ7sMe3EeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_4x4qcMfBEeeLjf3s145ZZA" base_Constraint="_4x4DYMfBEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_EqvHwMfCEeeLjf3s145ZZA" base_Constraint="_EqugsMfCEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_gaH_8MfCEeeLjf3s145ZZA" base_State="_gaE8oMfCEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_fMkLMcfDEeeLjf3s145ZZA" base_Constraint="_fMkLMMfDEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_gje60MfDEeeLjf3s145ZZA" base_Constraint="_gjeTwMfDEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_rOxjYMfEEeeLjf3s145ZZA" base_Constraint="_rOwVQMfEEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_Bn5hgMfFEeeLjf3s145ZZA" base_Constraint="_Bn46cMfFEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_O72D0MfFEeeLjf3s145ZZA" base_Constraint="_O71cwMfFEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_XXJcMMfFEeeLjf3s145ZZA" base_Constraint="_XXI1IMfFEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_hR51IcfFEeeLjf3s145ZZA" base_Constraint="_hR51IMfFEeeLjf3s145ZZA"/>
+  <UMLRealTime:CapsulePart xmi:id="_b_oNwMfGEeeLjf3s145ZZA" base_Property="_b_lKcMfGEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_SEMC4sfHEeeLjf3s145ZZA" base_Connector="_SEI_kMfHEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_V_yVwsfHEeeLjf3s145ZZA" base_Connector="_V_vScMfHEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_XXKYYsfHEeeLjf3s145ZZA" base_Connector="_XXHVEMfHEeeLjf3s145ZZA"/>
+  <UMLRealTime:Capsule xmi:id="_mXRFEMfIEeeLjf3s145ZZA" base_Class="_mXK-cMfIEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_pm_JYMfIEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_pm8GEMfIEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_Q9M6wMfJEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_Q9J3cMfJEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_WyCnMMfJEeeLjf3s145ZZA" base_Pseudostate="_WyAyAMfJEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_WyFDcMfJEeeLjf3s145ZZA" base_State="_WyDOQMfJEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_WyFqgcfJEeeLjf3s145ZZA" base_Region="_Wx-80MfJEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_WyIt0MfJEeeLjf3s145ZZA" base_StateMachine="_Wx4PIMfJEeeLjf3s145ZZA"/>
+  <UMLRealTime:CapsulePart xmi:id="_q3iq8MfLEeeLjf3s145ZZA" base_Property="_q3YS4MfLEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_zrLDwMfLEeeLjf3s145ZZA" base_Connector="_zrHZYMfLEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_0glBwMfLEeeLjf3s145ZZA" base_Connector="_0ghXYMfLEeeLjf3s145ZZA"/>
+  <UMLRealTime:Capsule xmi:id="_7qBJpsfLEeeLjf3s145ZZA" base_Class="_7p7qEMfLEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_QkUZUMfMEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_QkEhsMfMEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_br6Y0MfMEeeLjf3s145ZZA" isPublish="false" isWired="true" base_Port="_brsWYMfMEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_hCI2oMfMEeeLjf3s145ZZA" base_Pseudostate="_hCHogMfMEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_hCLS4MfMEeeLjf3s145ZZA" base_State="_hCKEwMfMEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_hCMhAMfMEeeLjf3s145ZZA" base_Region="_hCFzUMfMEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_hCPkUMfMEeeLjf3s145ZZA" base_StateMachine="_hB_FoMfMEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTState xmi:id="_m5BxgMfMEeeLjf3s145ZZA" base_State="_m4_8UMfMEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTPort xmi:id="_y_qMIMfMEeeLjf3s145ZZA" isPublish="false" isWired="false" base_Port="_y_nI0MfMEeeLjf3s145ZZA"/>
+  <UMLRealTime:CapsulePart xmi:id="_ewg80MfNEeeLjf3s145ZZA" base_Property="_ewd5gMfNEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_l9FRMcfNEeeLjf3s145ZZA" base_Connector="_l9CN4MfNEeeLjf3s145ZZA"/>
+  <UMLRealTime:RTConnector xmi:id="_mm2m8MfNEeeLjf3s145ZZA" base_Connector="_mmzjoMfNEeeLjf3s145ZZA"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_ZvDmYMfTEeemDPQj2b_Z9w" headerPreface="" implementationPreface="#include &lt;iostream>" base_Class="_7p7qEMfLEeeLjf3s145ZZA"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_uoCncMfTEeemDPQj2b_Z9w" implementationPreface="#include &lt;iostream>&#xA;#include &lt;string>" base_Class="_mXK-cMfIEeeLjf3s145ZZA"/>
+  <UMLRealTime:Capsule xmi:id="_SIHSEMfyEeel_eYEdvwXwA" base_Class="_SHtpcMfyEeel_eYEdvwXwA"/>
+  <UMLRealTime:RTPort xmi:id="_VDh6UMfyEeel_eYEdvwXwA" isPublish="false" isWired="true" base_Port="_VDeP8MfyEeel_eYEdvwXwA"/>
+  <UMLRealTime:RTPort xmi:id="_Wp-TsMfyEeel_eYEdvwXwA" isPublish="false" isWired="true" base_Port="_Wp6pUMfyEeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_bDJTYMfyEeel_eYEdvwXwA" base_Pseudostate="_bDG3IMfyEeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_bDOL4cfyEeel_eYEdvwXwA" base_Region="_bDEa4MfyEeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_bDWuwMfyEeel_eYEdvwXwA" base_StateMachine="_bC40sMfyEeel_eYEdvwXwA"/>
+  <UMLRealTime:CapsulePart xmi:id="_f_fcIMfzEeel_eYEdvwXwA" base_Property="_f_bxwMfzEeel_eYEdvwXwA"/>
+  <UMLRealTime:RTConnector xmi:id="_h710EMfzEeel_eYEdvwXwA" base_Connector="_h7w7kMfzEeel_eYEdvwXwA"/>
+  <UMLRealTime:RTConnector xmi:id="_ijN9IMfzEeel_eYEdvwXwA" base_Connector="_ijKSwMfzEeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_A8BcsMf2Eeel_eYEdvwXwA" base_Constraint="_A7_ngMf2Eeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_CztXEMf2Eeel_eYEdvwXwA" base_Constraint="_Czrh4Mf2Eeel_eYEdvwXwA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_GJFXcMf2Eeel_eYEdvwXwA" base_Constraint="_GJDiQMf2Eeel_eYEdvwXwA"/>
+  <UMLRealTime:RTPort xmi:id="_X6mLkMlGEeeW4-w3OhOVwg" isPublish="false" isWired="false" base_Port="_X6CK4MlGEeeW4-w3OhOVwg"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_R5uB0My1Eee23YbJDodh0Q" base_Package="_R5pJUMy1Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTMessageSet xmi:id="_R6Bj0My1Eee23YbJDodh0Q" base_Interface="_R59SYMy1Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTMessageSet xmi:id="_R6RbcMy1Eee23YbJDodh0Q" base_Interface="_R6Mi8My1Eee23YbJDodh0Q" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_R6ZXQMy1Eee23YbJDodh0Q" base_Interface="_R6VF0My1Eee23YbJDodh0Q" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_R6ePwMy1Eee23YbJDodh0Q" base_Collaboration="_R0GiAMy1Eee23YbJDodh0Q"/>
+  <UMLRealTime:Capsule xmi:id="_YGGEgMy1Eee23YbJDodh0Q" base_Class="_YFfnkMy1Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTPort xmi:id="_e3Q2UMy1Eee23YbJDodh0Q" isPublish="false" isWired="true" base_Port="_e3NL8My1Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTPort xmi:id="_hsHjkMy1Eee23YbJDodh0Q" isPublish="false" isWired="true" base_Port="_hsD5MMy1Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTPort xmi:id="_jzNy8My1Eee23YbJDodh0Q" isPublish="false" isWired="false" base_Port="_jzJhgMy1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_pgHEUMy1Eee23YbJDodh0Q" base_Pseudostate="_pgDZ8My1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_pgMj4My1Eee23YbJDodh0Q" base_State="_pgKHoMy1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTRegion xmi:id="_pgOZEMy1Eee23YbJDodh0Q" base_Region="_pgAWoMy1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTStateMachine xmi:id="_pgWU4My1Eee23YbJDodh0Q" base_StateMachine="_pfy7QMy1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_7P44wMy1Eee23YbJDodh0Q" base_State="_7P2cgMy1Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_4VzQwMy2Eee23YbJDodh0Q" base_Constraint="_4VyCoMy2Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_JIE7IMy3Eee23YbJDodh0Q" base_State="_JIB30My3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_KS1eEMy3Eee23YbJDodh0Q" base_State="_KSzB0My3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_LSN3cMy3Eee23YbJDodh0Q" base_State="_LSLbMMy3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_MB8EMMy3Eee23YbJDodh0Q" base_State="_MB5n8My3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTState xmi:id="_NIqbsMy3Eee23YbJDodh0Q" base_State="_NIn_cMy3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_71l78My3Eee23YbJDodh0Q" base_Constraint="_71lU4My3Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_AdZ0kMy4Eee23YbJDodh0Q" base_Constraint="_AdYmcMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_Iu6-0cy4Eee23YbJDodh0Q" base_Constraint="_Iu6-0My4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_PGkdYMy4Eee23YbJDodh0Q" base_Constraint="_PGj2UMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_SdfV4My4Eee23YbJDodh0Q" base_Constraint="_Sdeu0My4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_UE4xgMy4Eee23YbJDodh0Q" base_Constraint="_UE4KcMy4Eee23YbJDodh0Q"/>
+  <UMLRealTime:RTPort xmi:id="_q6cM8My4Eee23YbJDodh0Q" isPublish="false" isWired="true" base_Port="_q6YikMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_xnJ8kMy4Eee23YbJDodh0Q" base_Constraint="_xnJVgMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_0L-CsMy4Eee23YbJDodh0Q" base_Constraint="_0L9boMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_2kKCEMy4Eee23YbJDodh0Q" base_Constraint="_2kIz8My4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_4wogsMy4Eee23YbJDodh0Q" base_Constraint="_4wn5oMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_9B13Mcy4Eee23YbJDodh0Q" base_Constraint="_9B13MMy4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_-i1v4My4Eee23YbJDodh0Q" base_Constraint="_-i1I0My4Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_Bpv2ccy5Eee23YbJDodh0Q" base_Constraint="_Bpv2cMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_DExC8My5Eee23YbJDodh0Q" base_Constraint="_DEwb4My5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_U96OwMy5Eee23YbJDodh0Q" base_Constraint="_U95nsMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_afu4kMy5Eee23YbJDodh0Q" base_Constraint="_afuRgMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_dpQOQcy5Eee23YbJDodh0Q" base_Constraint="_dpQOQMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_fINfkMy5Eee23YbJDodh0Q" base_Constraint="_fIM4gMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_8RT8sMy5Eee23YbJDodh0Q" base_Constraint="_8RTVoMy5Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_DdWsoMy6Eee23YbJDodh0Q" base_Constraint="_DdWFkMy6Eee23YbJDodh0Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_WgpWsM3TEeemm4jyvrV52Q" base_Constraint="_WgnhgM3TEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_loL9kM3TEeemm4jyvrV52Q" base_Constraint="_loLWgM3TEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_tNYNUM3TEeemm4jyvrV52Q" base_Constraint="_tNXmQM3TEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_OmXyUM3UEeemm4jyvrV52Q" base_Constraint="_OmXLQM3UEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_THemAM3UEeemm4jyvrV52Q" base_Constraint="_THd-8M3UEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_fnvooM3UEeemm4jyvrV52Q" base_Constraint="_fnvBkM3UEeemm4jyvrV52Q"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_jciI4M3UEeemm4jyvrV52Q" base_Constraint="_jchh0M3UEeemm4jyvrV52Q"/>
+  <UMLRealTime:CapsulePart xmi:id="_Igii4M3cEee_k6VmQ7ca2g" base_Property="_IgKIYM3cEee_k6VmQ7ca2g"/>
+  <UMLRealTime:RTConnector xmi:id="_LkuZsM3pEee_k6VmQ7ca2g" base_Connector="_LknsAM3pEee_k6VmQ7ca2g"/>
+  <UMLRealTime:RTConnector xmi:id="_PXDb0c3pEee_k6VmQ7ca2g" base_Connector="_PXAYgM3pEee_k6VmQ7ca2g"/>
+  <UMLRealTime:RTPort xmi:id="_YEBL8M3pEee_k6VmQ7ca2g" isPublish="false" isWired="false" base_Port="_YD9hkM3pEee_k6VmQ7ca2g"/>
+  <UMLRTStateMachines:RTState xmi:id="___bjMM44EeeYO9H5ZDfnyA" base_State="___Ou4M44EeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTState xmi:id="_Pze1UM46EeeYO9H5ZDfnyA" base_State="_PzcZEM46EeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_fBTqYM46EeeYO9H5ZDfnyA" base_Constraint="_fBScQM46EeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTState xmi:id="_58eeEM4_EeeYO9H5ZDfnyA" base_State="_58cB0M4_EeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTState xmi:id="_8YZt8M4_EeeYO9H5ZDfnyA" base_State="_8YXRsM4_EeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_KReWkM5AEeeYO9H5ZDfnyA" base_Constraint="_KRdvgM5AEeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_L_uoIM5AEeeYO9H5ZDfnyA" base_Constraint="_L_uBEM5AEeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_S1dw4M5AEeeYO9H5ZDfnyA" base_Constraint="_S1dJ0M5AEeeYO9H5ZDfnyA"/>
+  <UMLRealTime:RTPort xmi:id="_ozfR8M5BEeeYO9H5ZDfnyA" isPublish="false" isWired="true" base_Port="_ozcOoM5BEeeYO9H5ZDfnyA"/>
+  <UMLRealTime:RTConnector xmi:id="_rhI8Qs5HEeeYO9H5ZDfnyA" base_Connector="_rhGgAM5HEeeYO9H5ZDfnyA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_Ak_JYM_QEeef9fnOg1p4lA" base_Constraint="_Ak9UMM_QEeef9fnOg1p4lA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_GdjfQM_QEeef9fnOg1p4lA" base_Constraint="_Gdi4MM_QEeef9fnOg1p4lA"/>
+  <UMLRTStateMachines:RTPseudostate xmi:id="_qWtOcN8nEeeJfdwg4GQMYg" base_Pseudostate="_qQDz4N8nEeeJfdwg4GQMYg"/>
+  <RTCppProperties:CapsuleProperties xmi:id="_uKErYN90EeemX-oXetmAWw" implementationPreface="#include &quot;umlrtmain.hh&quot;" base_Class="_TX8y0MexEeeLjf3s145ZZA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_DtAkMN98EeemX-oXetmAWw" base_Constraint="_Ds_WEN98EeemX-oXetmAWw"/>
+  <UMLRealTime:ProtocolContainer xmi:id="_tEOkYC7xEeu_GNTUne6_Eg" base_Package="_tELhEC7xEeu_GNTUne6_Eg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_tEUD8C7xEeu_GNTUne6_Eg" base_Interface="_tEQZkC7xEeu_GNTUne6_Eg"/>
+  <UMLRealTime:RTMessageSet xmi:id="_tEaKkC7xEeu_GNTUne6_Eg" base_Interface="_tEXHQC7xEeu_GNTUne6_Eg" rtMsgKind="out"/>
+  <UMLRealTime:RTMessageSet xmi:id="_tEfDEC7xEeu_GNTUne6_Eg" base_Interface="_tEb_wS7xEeu_GNTUne6_Eg" rtMsgKind="inOut"/>
+  <UMLRealTime:Protocol xmi:id="_tEhfUC7xEeu_GNTUne6_Eg" base_Collaboration="_tEFacC7xEeu_GNTUne6_Eg"/>
+  <UMLRealTime:RTPort xmi:id="_DJ1JkC7yEeu_GNTUne6_Eg" isPublish="false" isWired="true" base_Port="_DJtNwC7yEeu_GNTUne6_Eg"/>
+  <UMLRealTime:RTPort xmi:id="_Mwqg8C7yEeu_GNTUne6_Eg" isPublish="false" isWired="true" base_Port="_Mwm2kC7yEeu_GNTUne6_Eg"/>
+  <UMLRealTime:RTConnector xmi:id="_IEG1wC7zEeu_GNTUne6_Eg" base_Connector="_IEB9QC7zEeu_GNTUne6_Eg"/>
+  <UMLRTStateMachines:RTState xmi:id="_j6mjQC86Eeuwb66Gv8fIuw" base_State="_j6jf8C86Eeuwb66Gv8fIuw"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_T4v-UC88EeuofL5TEhXwIQ" base_Constraint="_T4uJIC88EeuofL5TEhXwIQ"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_CxTqUC8-EeuxZ591-l2JDA" base_Constraint="_CxR1IC8-EeuxZ591-l2JDA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_udbE8C8-EeuxZ591-l2JDA" base_Constraint="_udad4C8-EeuxZ591-l2JDA"/>
+  <UMLRTStateMachines:RTState xmi:id="_ptOlAC9BEeuGX9rTug_ohA" base_State="_ptLhsC9BEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTState xmi:id="_qt2UgC9BEeuGX9rTug_ohA" base_State="_qtyqIC9BEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTState xmi:id="_rxOdEC9BEeuGX9rTug_ohA" base_State="_rxKysC9BEeuGX9rTug_ohA"/>
+  <UMLRealTime:RTPort xmi:id="_vJ8P4C9CEeuGX9rTug_ohA" isPublish="false" isWired="true" base_Port="_vJ07IC9CEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="__SF_MC9CEeuGX9rTug_ohA" base_Constraint="__SExEC9CEeuGX9rTug_ohA"/>
+  <UMLRealTime:RTConnector xmi:id="_DSIGIC9DEeuGX9rTug_ohA" base_Connector="_DSCmkC9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_JxSh8S9DEeuGX9rTug_ohA" base_Constraint="_JxSh8C9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_ZAG1gC9DEeuGX9rTug_ohA" base_Constraint="_ZAGOcC9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_iqkvsC9DEeuGX9rTug_ohA" base_Constraint="_iqkIoC9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_lrrJMC9DEeuGX9rTug_ohA" base_Constraint="_lrqiIC9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_n8LMMC9DEeuGX9rTug_ohA" base_Constraint="_n8KlIC9DEeuGX9rTug_ohA"/>
+  <UMLRTStateMachines:RTGuard xmi:id="_rhTqYC9EEeulBode__Jnbw" base_Constraint="_rhR1MC9EEeulBode__Jnbw"/>
+  <UMLRTStateMachines:RTGuard xmi:id="__OBFkC9EEeulBode__Jnbw" base_Constraint="__OAegC9EEeulBode__Jnbw"/>
+</xmi:XMI>
